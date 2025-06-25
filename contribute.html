@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="assets/CSS/vanprasthafoundation.css">
+    <link rel="stylesheet" href="assets/CSS/contribute.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <meta charset="UTF-8">
@@ -14,11 +14,31 @@
             <h1 class="title"> Contribute to Vanprastha Foundation</h1>
             <p>Thank you for contributing to us. Your donations shall aid us to fulfill our mission and promise.</p>
             
-            <img class="qrimage" src="assets/images/qrcode.png" alt="QR CODE">
+         
         </section>
-        <section class="Volunteer">
+        <form action="#" method="POST">
+    
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
 
-        </section>
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+
+    <div id="donationAmountField" style="display:none;">
+      <label for="amount">Donation Amount (INR):</label>
+      <input type="number" id="amount" name="amount" min="0">
+    </div>
+
+    <label for="message">Message (Optional):</label>
+    <textarea id="message" name="message" rows="4" placeholder="Anything you'd like to share..."></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
     
 </body>
 <footer class="footer">
