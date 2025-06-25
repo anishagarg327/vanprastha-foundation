@@ -26,7 +26,7 @@
           <li><a href="#PreviousInitiatives">Previous Initiatives</a></li>
           <li><a href="#upcominginitiatives">Upcoming Initiatives</a></li>
           <li><a href="contribute.html">Contribute</a></li>
-           <li><a href="#contactus">Contact Us</a></li>
+           <li><a href="#" onclick="openPopup()">Contact Us</a></li>
       </div>
         </ul>
         </nav>
@@ -168,10 +168,40 @@ By bringing quality healthcare to their doorstep, Vanprastha Foundation aims to 
     Copyright &copy; <span id="year"></span> Vanprastha Foundation. All rights reserved.
   </p>
  <br>
-  
 </footer>
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<div id="contactPopup" class="popup-overlay">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="6da90ce7-61ec-4775-9c45-193d40f54e7b">
+
+      <label>Name:</label>
+      <input type="text" name="name" placeholder="Your Name" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" placeholder="abc@gmail.com" required>
+
+      <label>Message:</label>
+      <textarea name="message" rows="4" placeholder="Type your message here..." required></textarea>
+
+      <input type="checkbox" name="botcheck" style="display: none;">
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+<script>
+  function openPopup() {
+    document.getElementById('contactPopup').style.display = 'flex';
+  }
+
+  function closePopup() {
+    document.getElementById('contactPopup').style.display = 'none';
+  }
 </script>
 
 </body>

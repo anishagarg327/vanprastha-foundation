@@ -1,6 +1,19 @@
-.contribute-volunteer-form {
+body{
+     background-color:	#FFFDF5;
+   margin: 0;
+  padding: 0;
+}
+.contribution {
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+  text-align: center;
+}
+.contribute form {
   max-width: 600px;
-  margin: 40px auto;
+  margin: 10px auto;
   padding: 30px;
   background-color: #f0f8f4;
   border-radius: 12px;
@@ -8,22 +21,17 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-.contribute-volunteer-form h2 {
-  text-align: center;
-  color: #174c36;
-  margin-bottom: 25px;
-}
 
-.contribute-volunteer-form label {
+
+.contribute label {
   display: block;
-  margin-top: 15px;
+  
   font-weight: 500;
   color: #333;
 }
 
-.contribute-volunteer-form input,
-.contribute-volunteer-form select,
-.contribute-volunteer-form textarea {
+.contribute input,
+.contribute textarea {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
@@ -32,17 +40,7 @@
   font-size: 1rem;
 }
 
-.checkbox-group {
-  display: flex;
-  gap: 20px;
-  margin-top: 10px;
-}
-
-.checkbox-group label {
-  font-weight: normal;
-}
-
-.contribute-volunteer-form button {
+.contribute button {
   margin-top: 20px;
   width: 100%;
   background-color: #1a4d2e;
@@ -58,3 +56,29 @@
 .contribute-volunteer-form button:hover {
   background-color: #145732;
 }
+.qrimage {
+  width: 400px;
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.contribution  p {
+  font-size: 1.1rem;
+  text-decoration: underline;
+  color: #333;
+}
+.footer{
+  
+  height: 100px;
+  width: auto;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  color: rgb(8, 8, 7); 
+  line-height: 1.8;
+  text-align: center;
+
+}
+
+
