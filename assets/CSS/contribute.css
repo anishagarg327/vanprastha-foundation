@@ -64,8 +64,9 @@ body{
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 .contribution  p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.1rem;
-  text-decoration: underline;
+ 
   color: #333;
 }
 .footer{
@@ -78,6 +79,7 @@ body{
   color: rgb(8, 8, 7); 
   line-height: 1.8;
   text-align: center;
+  float: bottom;
 
 }
 
