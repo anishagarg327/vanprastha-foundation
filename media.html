@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html class="light" lang="en">
 <head>
-    <link rel="stylesheet" href="assets/CSS/contribute.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanprastha Foundation</title>
-
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Vanprastha Foundation | Media Centre</title>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Public_Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -16,7 +12,7 @@
             darkMode: "class",
             theme: {
                 extend: {
-                    colors: {
+                    "colors": {
                         "background": "#f6fafe",
                         "surface-container-low": "#f0f4f9",
                         "error": "#ba1a1a",
@@ -25,9 +21,8 @@
                         "on-background": "#171c20",
                         "surface-variant": "#dfe3e7",
                         "primary": "#154212",
-                        "outline": "#72796e",
                     },
-                    fontFamily: {
+                    "fontFamily": {
                         "headline": ["Manrope"],
                         "body": ["Public Sans"],
                     }
@@ -36,13 +31,15 @@
         }
     </script>
     <style>
-        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
         .alpine-gradient { background: linear-gradient(135deg, #154212 0%, #2d5a27 100%); }
     </style>
 </head>
-<body>
+<body class="bg-background text-on-background font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
 
-    <!-- TopNavBar -->
+                    <!-- TopNavBar -->
     <nav class="fixed top-0 w-full z-50 bg-white/95 shadow-sm backdrop-blur-md transition-colors border-b border-surface-variant/20">
         <div class="flex justify-between items-center px-4 sm:px-6 md:px-8 py-4 md:py-6 max-w-screen-2xl mx-auto">
             <div class="flex items-center gap-3">
@@ -62,8 +59,8 @@
                 <a href="contribute.html" class="alpine-gradient text-white px-5 md:px-8 py-2.5 md:py-3 rounded-xl font-headline font-bold tracking-tight hover:opacity-90 transition-all shadow-md text-sm md:text-base">
                     Donate
                 </a>
-                <!-- Mobile hamburger hover fix -->
-                <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2 focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden'); document.getElementById('mobile-menu').classList.toggle('flex');" aria-label="Menu">
+                <!-- Mobile hamburger -->
+                <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2" onclick="document.getElementById('mobile-menu').classList.toggle('hidden'); document.getElementById('mobile-menu').classList.toggle('flex');" aria-label="Menu">
                     <span class="block w-6 h-0.5 bg-emerald-900 transition-all"></span>
                     <span class="block w-6 h-0.5 bg-emerald-900 transition-all"></span>
                     <span class="block w-6 h-0.5 bg-emerald-900 transition-all"></span>
@@ -81,51 +78,31 @@
         </div>
     </nav>
 
-<main class="pt-24 lg:pt-32">
-
-
-        <section class="contribution">
-           
-            <p>Thank you for contributing to us. Your donations shall aid us to fulfill our mission and promise.</p>
-            </section>
-          <section class="contribute">
+    <main class="pt-32 pb-24 max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
         
-        <form action="#" method="POST">
-    
-    <label for="name">Full Name:</label>
-    <input type="text" id="name" name="name" placeholder="Name" required>
+        <header class="text-center mb-24 max-w-3xl mx-auto">
+            <span class="text-sm uppercase tracking-[0.2em] text-emerald-700 font-bold mb-4 block font-headline">The Narrative</span>
+            <h1 class="text-3xl md:text-3xl lg:text-7xl font-headline font-extrabold tracking-tighter text-on-surface leading-tight mb-6">
+                Media & <br><span class="text-primary italic">Resource Centre</span>
+            </h1>
+            <p class="text-lg text-stone-600 leading-relaxed font-medium">
+                Tracking our journey, impact stories, and reach as we work towards restoring the Himalayan ecological balance.
+            </p>
+        </header>
 
-    <label for="email">Email Address:</label>
-    <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+        <!-- Placeholder Media Section -->
+        <section class="mb-24 py-20 bg-stone-50 rounded-[4rem] text-center px-5 sm:px-6 md:px-12 border border-stone-200 border-dashed">
+            <span class="material-symbols-outlined text-2xl md:text-3xl lg:text-6xl text-stone-300 mb-6">newspaper</span>
+            <h3 class="font-headline text-3xl font-extrabold mb-4 uppercase tracking-tighter">Media Archive Coming Soon</h3>
+                            <p class="text-stone-500 text-xs tracking-wider font-body">&copy; <script>document.write(new Date().getFullYear())</script> Vanprastha Foundation. New Delhi</p>
+            </div>
+            <div class="flex gap-6 sm:p-6 md:p-10 font-headline text-xs font-bold uppercase tracking-widest text-stone-600">
+                <a class="hover:text-emerald-700 transition-colors" href="transparency.html">Governance</a>
+                <a class="hover:text-emerald-700 transition-colors" href="faq.html">Help</a>
+                <a class="hover:text-emerald-700 transition-colors" href="media.html">Press</a>
+            </div>
+        </div>
+    </footer>
 
-    <label for="phone">Phone Number:</label>
-    <input type="tel" id="phone" name="phone" placeholder="999999999" required>
-
-
-    <div id="donationAmountField"">
-      <label for="amount">Donation Amount (INR):</label>
-      <input type="number" id="amount" name="amount" min="0">
-    </div>
-
-    <label for="message">Message (Optional):</label>
-    <textarea id="message" name="message" rows="4" placeholder="Anything you'd like to share..."></textarea>
-
-    <button type="submit">Submit</button>
-  </form>
-</section>
-    
 </body>
-</main>
-<footer class="footer" id="contactus">
- 
-  <p>
-    <i class="fas fa-map-marker-alt"></i>  AD-13 Tagore Garden, New Delhi-110027 
-    <br>
-    <i class="fas fa-envelope"></i> 
-     Email:  <a href="mailto:foundationvanprastha@gmail.com">foundationvanprastha@gmail.com</a> 
-      <br>
-    Copyright &copy; <span id="year"></span> Vanprastha Foundation. All rights reserved.
-  </p>
- <br>
-</footer>
 </html>

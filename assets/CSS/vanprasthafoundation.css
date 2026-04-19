@@ -428,3 +428,62 @@ padding: 20px;
 
 
 
+
+
+/* RESPONSIVENESS OVERRIDES */
+@media (max-width: 768px) {
+  .navigation_bar {
+    height: auto;
+  }
+  .navigation_bar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navigation_bar a {
+    padding: 10px 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .navbuttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  .logo {
+    justify-content: center;
+    margin-left: 0;
+    width: 100%;
+  }
+  .logo img {
+    height: 60px;
+  }
+  .section_aboutus, .section_initiatives, .section_Uinitiatives {
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+  }
+  .aboutimg img, .grid, .ig1 img, .banner img {
+    width: 100%;
+    height: auto;
+  }
+  .intro p {
+    font-size: 14px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .ig1 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .text {
+    width: 100%;
+    padding: 10px;
+  }
+  .footer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+}

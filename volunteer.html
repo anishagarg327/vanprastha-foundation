@@ -7,8 +7,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vanprastha Foundation</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Public_Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "background": "#f6fafe",
+                        "surface-container-low": "#f0f4f9",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#bcf0ae",
+                        "on-surface": "#171c20",
+                        "on-background": "#171c20",
+                        "surface-variant": "#dfe3e7",
+                        "primary": "#154212",
+                        "outline": "#72796e",
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Public Sans"],
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .alpine-gradient { background: linear-gradient(135deg, #154212 0%, #2d5a27 100%); }
+    </style>
 </head>
 <body>
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/95 shadow-sm backdrop-blur-md transition-colors border-b border-surface-variant/20">
+        <div class="flex justify-between items-center px-4 sm:px-6 md:px-8 py-4 md:py-6 max-w-screen-2xl mx-auto">
+            <div class="flex items-center gap-3">
+                <img src="assets/images/Vanprastha-NGO-logo.png" alt="Logo" class="h-9 md:h-11 mix-blend-multiply">
+                <div class="text-lg md:text-2xl font-extrabold tracking-tighter text-emerald-900 font-headline hidden sm:block">
+                    Vanprastha Foundation</div>
+            </div>
+            <div class="hidden md:flex items-center space-x-8 lg:space-x-12">
+                <a class="text-stone-600 font-medium font-headline hover:text-emerald-700 transition-colors" href="index.html">Home</a>
+                <a class="text-stone-600 font-medium font-headline hover:text-emerald-700 transition-colors" href="initiatives.html">Initiatives</a>
+                <a class="text-stone-600 font-medium font-headline hover:text-emerald-700 transition-colors" href="transparency.html">Governance</a>
+                <a class="text-stone-600 font-medium font-headline hover:text-emerald-700 transition-colors" href="media.html">Media</a>
+                <a class="text-stone-600 font-medium font-headline hover:text-emerald-700 transition-colors" href="awards.html">Awards</a>
+                <a class="text-stone-600 font-medium font-headline hover:text-emerald-700 transition-colors" href="faq.html">FAQ</a>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="contribute.html" class="alpine-gradient text-white px-5 md:px-8 py-2.5 md:py-3 rounded-xl font-headline font-bold tracking-tight hover:opacity-90 transition-all shadow-md text-sm md:text-base">
+                    Donate
+                </a>
+                <!-- Mobile hamburger hover fix -->
+                <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2 focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden'); document.getElementById('mobile-menu').classList.toggle('flex');" aria-label="Menu">
+                    <span class="block w-6 h-0.5 bg-emerald-900 transition-all"></span>
+                    <span class="block w-6 h-0.5 bg-emerald-900 transition-all"></span>
+                    <span class="block w-6 h-0.5 bg-emerald-900 transition-all"></span>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-stone-100 flex-col px-4 sm:px-6 md:px-8 py-4 space-y-4 shadow-xl">
+            <a class="text-stone-700 font-semibold font-headline hover:text-emerald-700 transition-colors py-2 border-b border-stone-100" href="index.html">Home</a>
+            <a class="text-stone-700 font-semibold font-headline hover:text-emerald-700 transition-colors py-2 border-b border-stone-100" href="initiatives.html">Initiatives</a>
+            <a class="text-stone-700 font-semibold font-headline hover:text-emerald-700 transition-colors py-2 border-b border-stone-100" href="transparency.html">Governance</a>
+            <a class="text-stone-700 font-semibold font-headline hover:text-emerald-700 transition-colors py-2 border-b border-stone-100" href="media.html">Media</a>
+            <a class="text-stone-700 font-semibold font-headline hover:text-emerald-700 transition-colors py-2 border-b border-stone-100" href="awards.html">Awards</a>
+            <a class="text-stone-700 font-semibold font-headline hover:text-emerald-700 transition-colors py-2" href="faq.html">FAQ</a>
+        </div>
+    </nav>
+
+<main class="pt-24 lg:pt-32">
+
 
         <section class="contribution">
            
@@ -34,6 +108,7 @@
   </form>
 </section>
 </body>
+</main>
 <footer class="footer" id="contactus">
  
   <p>

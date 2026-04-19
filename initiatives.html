@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Initiatives | Vanprastha Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Public_Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "background": "#f6fafe",
+                        "surface-container-low": "#f0f4f9",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#bcf0ae",
+                        "on-surface": "#171c20",
+                        "on-tertiary-fixed": "#360f00",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#2c3135",
+                        "on-primary-container": "#9dd090",
+                        "surface-container-highest": "#dfe3e7",
+                        "on-secondary-container": "#48667d",
+                        "surface-variant": "#dfe3e7",
+                        "on-background": "#171c20",
+                        "secondary-fixed": "#cae6ff",
+                        "on-tertiary-container": "#ffaf8c",
+                        "outline": "#72796e",
+                        "on-tertiary": "#ffffff",
+                        "surface-dim": "#d6dadf",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#f6fafe",
+                        "surface-tint": "#3b6934",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed-dim": "#abcae5",
+                        "on-primary-fixed-variant": "#23501e",
+                        "secondary-container": "#c4e3ff",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#642502",
+                        "outline-variant": "#c2c9bb",
+                        "primary-container": "#2d5a27",
+                        "tertiary-fixed-dim": "#ffb596",
+                        "on-tertiary-fixed-variant": "#76320f",
+                        "tertiary-fixed": "#ffdbcd",
+                        "secondary": "#446279",
+                        "on-error-container": "#93000a",
+                        "surface-container": "#eaeef3",
+                        "surface-container-high": "#e4e9ed",
+                        "inverse-on-surface": "#edf1f6",
+                        "primary-fixed-dim": "#a1d494",
+                        "on-primary-fixed": "#002201",
+                        "on-surface-variant": "#42493e",
+                        "on-secondary-fixed": "#001e2f",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-container": "#823b17",
+                        "inverse-primary": "#a1d494",
+                        "surface": "#f6fafe",
+                        "primary": "#154212",
+                        "on-secondary-fixed-variant": "#2b4a60"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body">
+                    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/95 shadow-sm backdrop-blur-md transition-colors border-b border-surface-variant/20">
+        <div class="flex justify-between items-center px-4 sm:px-6 md:px-8 py-4 md:py-6 max-w-screen-2xl mx-auto">
+            <div class="flex items-center gap-3">
+                <img src="assets/images/Vanprastha-NGO-logo.png" alt="Logo" class="h-9 md:h-11 mix-blend-multiply">
+                <div class="text-lg md:text-2xl font-extrabold tracking-tighter text-emerald-900 font-headline hidden sm:block">
+                    Vanprastha Foundation</div>
+            </div>
+            <div class="hidden md:flex items-center space-x-8 lg:space-x-12">
+                <a class="text-stone-600 font-medium font-headline hover:text-emerald-700 transition-colors" href="index.html">Home</a>
+                <a class="text-stone-600 font-medium font-headline hover:text-emerald-700 transition-colors" href="initiatives.html">Initiatives</a>
+                <a class="text-stone-600 font-medium font-headline hover:text-emerald-700 transition-colors" href="transparency.html">Governance</a>
+                <a class="text-stone-600 font-medium font-headline hover:text-emerald-700 transition-colors" href="media.html">Media</a>
+                <a class="text-stone-600 font-medium font-headline hover:text-emerald-700 transition-colors" href="awards.html">Awards</a>
+                <a class="text-stone-600 font-medium font-headline hover:text-emerald-700 transition-colors" href="faq.html">FAQ</a>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="contribute.html" class="alpine-gradient text-white px-5 md:px-8 py-2.5 md:py-3 rounded-xl font-headline font-bold tracking-tight hover:opacity-90 transition-all shadow-md text-sm md:text-base">
+                    Donate
+                </a>
+                <!-- Mobile hamburger -->
+                <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2" onclick="document.getElementById('mobile-menu').classList.toggle('hidden'); document.getElementById('mobile-menu').classList.toggle('flex');" aria-label="Menu">
+                    <span class="block w-6 h-0.5 bg-emerald-900 transition-all"></span>
+                    <span class="block w-6 h-0.5 bg-emerald-900 transition-all"></span>
+                    <span class="block w-6 h-0.5 bg-emerald-900 transition-all"></span>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-stone-100 flex-col px-4 sm:px-6 md:px-8 py-4 space-y-4 shadow-xl">
+            <a class="text-stone-700 font-semibold font-headline hover:text-emerald-700 transition-colors py-2 border-b border-stone-100" href="index.html">Home</a>
+            <a class="text-stone-700 font-semibold font-headline hover:text-emerald-700 transition-colors py-2 border-b border-stone-100" href="initiatives.html">Initiatives</a>
+            <a class="text-stone-700 font-semibold font-headline hover:text-emerald-700 transition-colors py-2 border-b border-stone-100" href="transparency.html">Governance</a>
+            <a class="text-stone-700 font-semibold font-headline hover:text-emerald-700 transition-colors py-2 border-b border-stone-100" href="media.html">Media</a>
+            <a class="text-stone-700 font-semibold font-headline hover:text-emerald-700 transition-colors py-2 border-b border-stone-100" href="awards.html">Awards</a>
+            <a class="text-stone-700 font-semibold font-headline hover:text-emerald-700 transition-colors py-2" href="faq.html">FAQ</a>
+        </div>
+    </nav>
+
+    <main class="pt-24 px-4 sm:px-6 md:px-8 max-w-screen-2xl mx-auto">
+        <!-- Hero Section -->
+        <header class="py-24">
+            <span class="text-sm uppercase tracking-[0.2em] text-on-secondary-container font-bold mb-4 block">Ground Initiatives</span>
+            <h1 class="text-2xl md:text-3xl lg:text-8xl font-headline font-extrabold tracking-tighter text-on-surface leading-tight mb-8">
+                Impactful <br/> <span class="text-primary italic">Stewardship</span>
+            </h1>
+        </header>
+
+        <!-- Initiatives Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 sm:p-6 md:p-8 mb-32">
+            <article class="md:col-span-8 bg-surface-container-lowest rounded-xl overflow-hidden group">
+                <div class="grid md:grid-cols-2 h-full">
+                    <div class="p-6 sm:p-6 md:p-10 flex flex-col justify-center">
+                        <span class="text-rose-600 font-label text-xs font-bold tracking-widest uppercase mb-4">Completed Mission</span>
+                        <h2 class="text-2xl md:text-3xl lg:text-4xl font-headline font-bold text-on-surface mb-6 tracking-tight">Free Medical & Dental Camp</h2>
+                        <p class="text-on-surface-variant mb-8 leading-relaxed">
+                            A successful collaboration bringing essential healthcare to remote Himalayan communities on July 8th.
+                        </p>
+                        <a href="medical-camp.html" class="inline-flex items-center gap-2 font-headline font-bold text-primary group-hover:gap-4 transition-all">
+                            Read the Health Report <span class="material-symbols-outlined">north_east</span>
+                        </a>
+                    </div>
+                    <div class="relative min-h-[300px] overflow-hidden">
+                        <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="assets/images/medical_camp_5.jpg"/>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Metrics -->
+            <div class="md:col-span-4 bg-secondary-container p-6 sm:p-6 md:p-10 rounded-xl flex flex-col justify-between">
+                <span class="material-symbols-outlined text-2xl md:text-3xl lg:text-4xl text-on-secondary-container">health_and_safety</span>
+                <div>
+                    <h3 class="text-2xl font-headline font-bold text-on-secondary-container mb-4 tracking-tight">Health Outreach</h3>
+                    <p class="text-on-secondary-container font-headline text-3xl md:text-3xl lg:text-5xl font-extrabold mb-2 tracking-tighter">1,000+</p>
+                    <p class="text-on-secondary-container/80 text-sm font-label font-bold uppercase tracking-wider">Expected Patients</p>
+                </div>
+            </div>
+
+            <!-- Project Punarjeevan -->
+            <article class="md:col-span-12 relative rounded-xl overflow-hidden min-h-[500px] flex items-end">
+                <img class="absolute inset-0 w-full h-full object-cover" src="assets/images/punarjeevan1.jpg"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                <div class="relative p-6 sm:p-6 md:p-12 w-full flex flex-col md:flex-row justify-between items-end gap-4">
+                    <div class="max-w-xl">
+                        <span class="text-primary-fixed font-label text-xs font-bold tracking-widest uppercase mb-4 block">Ecosystem Restoration</span>
+                        <h2 class="text-2xl md:text-3xl lg:text-5xl font-headline font-bold text-white mb-4 tracking-tight leading-none">Project Punarjeevan</h2>
+                        <p class="text-white/80 leading-relaxed font-body mb-8">
+                            Reviving forests ravaged by summer wildfires near Kukuchhina and Dunagiri by planting native, endemic tree varieties.
+                        </p>
+                        <a href="punarjeevan.html" class="bg-white text-primary px-5 sm:px-6 md:px-10 py-5 rounded-xl font-headline font-bold text-lg hover:bg-opacity-90 transition-all inline-block">Read Full Narrative</a>
+                    </div>
+                    <a href="contribute.html" class="bg-primary text-on-primary px-5 sm:px-6 md:px-10 py-5 rounded-xl font-headline font-bold text-lg hover:opacity-90 transition-all">Support Afforestation</a>
+                </div>
+            </article>
+
+            <!-- Masti Ki Pathshala -->
+            <article class="md:col-span-6 bg-surface-container-high rounded-xl overflow-hidden group">
+                <div class="p-6 sm:p-6 md:p-10">
+                    <span class="text-tertiary font-label text-xs font-bold tracking-widest uppercase mb-4 block">Education</span>
+                    <h3 class="text-3xl font-headline font-bold text-on-surface mb-6 tracking-tight">Masti Ki Pathshala</h3>
+                    <p class="text-on-surface-variant mb-4 leading-relaxed">
+                        Inspiring village children through holistic growth, engaging teaching, and school supply distribution led by dedicated mentors.
+                    </p>
+                    <a href="pathshala.html" class="inline-flex items-center gap-2 font-headline font-bold text-primary mb-8 hover:gap-4 transition-all">
+                        Read full narrative <span class="material-symbols-outlined">north_east</span>
+                    </a>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <img class="rounded-lg aspect-video object-cover" src="assets/images/klkhatterclass1.jpg"/>
+                        <img class="rounded-lg aspect-video object-cover" src="assets/images/klkhatterclass2.jpg"/>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Cleanliness Drive -->
+            <article class="md:col-span-6 bg-surface-container-low rounded-xl overflow-hidden group">
+                <div class="p-6 sm:p-6 md:p-10">
+                    <span class="text-emerald-700 font-label text-xs font-bold tracking-widest uppercase mb-4 block">Ecology</span>
+                    <h3 class="text-3xl font-headline font-bold text-on-surface mb-6 tracking-tight">Community Cleanliness Drive</h3>
+                    <p class="text-on-surface-variant mb-6 leading-relaxed">
+                        Local women leading the restoration of forest health and village sanitation through collective action and awareness.
+                    </p>
+                    <a href="cleanliness-drive.html" class="inline-flex items-center gap-2 font-headline font-bold text-primary mb-8 hover:gap-4 transition-all">
+                        Read full narrative <span class="material-symbols-outlined">north_east</span>
+                    </a>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <img class="rounded-lg aspect-video object-cover" src="assets/images/cleanliness_1.jpg"/>
+                        <img class="rounded-lg aspect-video object-cover" src="assets/images/cleanliness_2.jpg"/>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Menstrual Hygiene Drive -->
+            <article class="md:col-span-6 bg-surface-container-low rounded-xl overflow-hidden group">
+                <div class="p-6 sm:p-6 md:p-10">
+                    <span class="text-rose-600 font-label text-xs font-bold tracking-widest uppercase mb-4 block">Women's Health</span>
+                    <h3 class="text-3xl font-headline font-bold text-on-surface mb-6 tracking-tight">Sanitary Pads Distribution</h3>
+                    <p class="text-on-surface-variant mb-6 leading-relaxed">
+                        Empowering over 100+ rural women with hygiene awareness and dignity through interactive sessions.
+                    </p>
+                    <a href="sanitary-drive.html" class="inline-flex items-center gap-2 font-headline font-bold text-primary mb-8 hover:gap-4 transition-all">
+                        Read full narrative <span class="material-symbols-outlined">north_east</span>
+                    </a>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <img class="rounded-lg aspect-video object-cover" src="assets/images/menstrual_hygiene_2.jpg"/>
+                        <img class="rounded-lg aspect-video object-cover" src="assets/images/menstrual_hygiene_1.jpg"/>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="w-full bg-stone-100 border-t border-stone-200/20">
+        <div class="flex flex-col md:flex-row justify-between items-center px-5 sm:px-6 md:px-12 py-16 w-full max-w-screen-2xl mx-auto">
+            <div class="mb-8 md:mb-0 text-center md:text-left">
+                <div class="text-lg font-bold text-emerald-900 font-headline mb-2">Vanprastha Foundation</div>
+                                <p class="text-stone-500 text-sm tracking-wide font-body">&copy; <script>document.write(new Date().getFullYear())</script> Vanprastha Foundation. AD-13 Tagore Garden, New Delhi-110027</p>
+            </div>
+            <div class="flex gap-6 sm:p-6 md:p-12 font-headline text-sm font-semibold uppercase tracking-widest text-stone-600">
+                <a class="hover:text-emerald-700 transition-colors" href="#">Inquiries</a>
+                <a class="hover:text-emerald-700 transition-colors" href="#">Governance</a>
+                <a class="hover:text-emerald-700 transition-colors" href="#">Annual Audit</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
