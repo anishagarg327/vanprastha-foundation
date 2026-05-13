@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html class="light" lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Menstrual Hygiene Drive | Vanprastha Foundation</title>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Public_Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Public_Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script id="tailwind-config">
         tailwind.config = {
@@ -29,34 +34,57 @@
         }
     </script>
     <style>
-        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
-        .reveal.active { opacity: 1; transform: translateY(0); }
-        .alpine-gradient { background: linear-gradient(135deg, #154212 0%, #2d5a27 100%); }
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .alpine-gradient {
+            background: linear-gradient(135deg, #154212 0%, #2d5a27 100%);
+        }
     </style>
 </head>
+
 <body class="bg-background text-on-surface font-body selection:bg-rose-100 selection:text-rose-900">
-                    <!-- TopNavBar -->
-    <nav class="fixed top-0 w-full z-50 bg-white/95 shadow-sm backdrop-blur-md transition-colors border-b border-surface-variant/20">
+    <!-- TopNavBar -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-white/95 shadow-sm backdrop-blur-md transition-colors border-b border-surface-variant/20">
         <div class="flex justify-between items-center px-4 sm:px-6 md:px-8 py-4 md:py-6 max-w-screen-2xl mx-auto">
             <div class="flex items-center gap-3">
                 <img src="assets/images/Vanprastha-NGO-logo.png" alt="Logo" class="h-9 md:h-11 mix-blend-multiply">
-                <div class="text-lg md:text-2xl font-extrabold tracking-tighter text-emerald-900 font-headline hidden sm:block">
+                <div
+                    class="text-lg md:text-2xl font-extrabold tracking-tighter text-emerald-900 font-headline hidden sm:block">
                     Vanprastha Foundation</div>
             </div>
             <div class="hidden md:flex items-center space-x-8 lg:space-x-12">
-                <a class="text-stone-600 font-medium font-headline hover:text-emerald-700 transition-colors" href="index.html">Home</a>
-                <a class="text-stone-600 font-medium font-headline hover:text-emerald-700 transition-colors" href="initiatives.html">Initiatives</a>
-                <a class="text-stone-600 font-medium font-headline hover:text-emerald-700 transition-colors" href="transparency.html">Governance</a>
-                <a class="text-stone-600 font-medium font-headline hover:text-emerald-700 transition-colors" href="media.html">Media</a>
-                <a class="text-stone-600 font-medium font-headline hover:text-emerald-700 transition-colors" href="awards.html">Awards</a>
-                <a class="text-stone-600 font-medium font-headline hover:text-emerald-700 transition-colors" href="faq.html">FAQ</a>
+                <a class="text-stone-600 font-medium font-headline hover:text-emerald-700 transition-colors"
+                    href="index.html">Home</a>
+                <a class="text-stone-600 font-medium font-headline hover:text-emerald-700 transition-colors"
+                    href="initiatives.html">Initiatives</a>
+                <a class="text-stone-600 font-medium font-headline hover:text-emerald-700 transition-colors"
+                    href="transparency.html">Governance</a>
+                <a class="text-stone-600 font-medium font-headline hover:text-emerald-700 transition-colors"
+                    href="media.html">Media</a>
+                <a class="text-stone-600 font-medium font-headline hover:text-emerald-700 transition-colors"
+                    href="awards.html">Awards</a>
+                <a class="text-stone-600 font-medium font-headline hover:text-emerald-700 transition-colors"
+                    href="faq.html">FAQ</a>
             </div>
             <div class="flex items-center gap-3">
-                <a href="contribute.html" class="alpine-gradient text-white px-5 md:px-8 py-2.5 md:py-3 rounded-xl font-headline font-bold tracking-tight hover:opacity-90 transition-all shadow-md text-sm md:text-base">
+                <a href="contribute.html"
+                    class="alpine-gradient text-white px-5 md:px-8 py-2.5 md:py-3 rounded-xl font-headline font-bold tracking-tight hover:opacity-90 transition-all shadow-md text-sm md:text-base">
                     Donate
                 </a>
                 <!-- Mobile hamburger -->
-                <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2" onclick="document.getElementById('mobile-menu').classList.toggle('hidden'); document.getElementById('mobile-menu').classList.toggle('flex');" aria-label="Menu">
+                <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2"
+                    onclick="document.getElementById('mobile-menu').classList.toggle('hidden'); document.getElementById('mobile-menu').classList.toggle('flex');"
+                    aria-label="Menu">
                     <span class="block w-6 h-0.5 bg-emerald-900 transition-all"></span>
                     <span class="block w-6 h-0.5 bg-emerald-900 transition-all"></span>
                     <span class="block w-6 h-0.5 bg-emerald-900 transition-all"></span>
@@ -64,29 +92,40 @@
             </div>
         </div>
         <!-- Mobile Dropdown Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-stone-100 flex-col px-4 sm:px-6 md:px-8 py-4 space-y-4 shadow-xl">
-            <a class="text-stone-700 font-semibold font-headline hover:text-emerald-700 transition-colors py-2 border-b border-stone-100" href="index.html">Home</a>
-            <a class="text-stone-700 font-semibold font-headline hover:text-emerald-700 transition-colors py-2 border-b border-stone-100" href="initiatives.html">Initiatives</a>
-            <a class="text-stone-700 font-semibold font-headline hover:text-emerald-700 transition-colors py-2 border-b border-stone-100" href="transparency.html">Governance</a>
-            <a class="text-stone-700 font-semibold font-headline hover:text-emerald-700 transition-colors py-2 border-b border-stone-100" href="media.html">Media</a>
-            <a class="text-stone-700 font-semibold font-headline hover:text-emerald-700 transition-colors py-2 border-b border-stone-100" href="awards.html">Awards</a>
-            <a class="text-stone-700 font-semibold font-headline hover:text-emerald-700 transition-colors py-2" href="faq.html">FAQ</a>
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white border-t border-stone-100 flex-col px-4 sm:px-6 md:px-8 py-4 space-y-4 shadow-xl">
+            <a class="text-stone-700 font-semibold font-headline hover:text-emerald-700 transition-colors py-2 border-b border-stone-100"
+                href="index.html">Home</a>
+            <a class="text-stone-700 font-semibold font-headline hover:text-emerald-700 transition-colors py-2 border-b border-stone-100"
+                href="initiatives.html">Initiatives</a>
+            <a class="text-stone-700 font-semibold font-headline hover:text-emerald-700 transition-colors py-2 border-b border-stone-100"
+                href="transparency.html">Governance</a>
+            <a class="text-stone-700 font-semibold font-headline hover:text-emerald-700 transition-colors py-2 border-b border-stone-100"
+                href="media.html">Media</a>
+            <a class="text-stone-700 font-semibold font-headline hover:text-emerald-700 transition-colors py-2 border-b border-stone-100"
+                href="awards.html">Awards</a>
+            <a class="text-stone-700 font-semibold font-headline hover:text-emerald-700 transition-colors py-2"
+                href="faq.html">FAQ</a>
         </div>
     </nav>
 
     <main class="pt-24">
         <!-- Hero Header -->
         <header class="relative h-[75vh] min-h-[600px] overflow-hidden bg-rose-50">
-            <img src="assets/images/menstrual_hygiene_2.jpg" alt="Sanitary Pads Distribution Drive" class="w-full h-full object-cover">
+            <img src="assets/images/menstrual_hygiene_2.jpg" alt="Sanitary Pads Distribution Drive"
+                class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
             <div class="absolute bottom-0 left-0 w-full p-4 sm:p-6 md:p-8 md:p-24 text-white">
                 <div class="max-w-4xl mx-auto">
-                    <span class="inline-block px-4 py-1 mb-6 bg-rose-600 text-white rounded-full text-xs font-bold tracking-widest uppercase font-label">Women's Health</span>
-                    <h1 class="text-3xl md:text-3xl lg:text-8xl font-headline font-extrabold tracking-tighter leading-none mb-6">
+                    <span
+                        class="inline-block px-4 py-1 mb-6 bg-rose-600 text-white rounded-full text-xs font-bold tracking-widest uppercase font-label">Women's
+                        Health</span>
+                    <h1
+                        class="text-3xl md:text-3xl lg:text-8xl font-headline font-extrabold tracking-tighter leading-none mb-6">
                         Health, Dignity & <br><span class="text-rose-400 italic font-medium">Informed Awareness</span>
                     </h1>
                     <p class="text-xl md:text-2xl text-white/90 font-medium max-w-2xl leading-relaxed">
-                        Normalizing conversations and empowering over 100+ women in rural Uttarakhand.
+                        Normalizing conversations and empowering over 1000+ women in rural Uttarakhand.
                     </p>
                 </div>
             </div>
@@ -94,21 +133,28 @@
 
         <!-- Article Content -->
         <article class="max-w-4xl mx-auto px-4 sm:px-6 md:px-8 py-24 space-y-24">
-            
+
             <!-- Context & The Challenge -->
             <section class="reveal active">
                 <div class="grid md:grid-cols-12 gap-6 sm:p-6 md:p-12 items-start">
                     <div class="md:col-span-8 space-y-8 text-lg text-on-surface-variant leading-relaxed">
                         <p>
-                            Access to menstrual hygiene and awareness remains a significant challenge in many rural communities. Addressing this critical need, Vanprastha Foundation organized a <strong>Sanitary Pads Distribution Drive</strong> aimed at promoting health, dignity, and informed awareness among women.
+                            Access to menstrual hygiene and awareness remains a significant challenge in many rural
+                            communities. Addressing this critical need, Vanprastha Foundation organized a
+                            <strong>Sanitary Pads Distribution Drive</strong> aimed at promoting health, dignity, and
+                            informed awareness among women.
                         </p>
                         <p>
-                            Rural women were invited to participate in an interactive session focused on the importance of menstrual hygiene, sanitation, and overall well-being.
+                            Rural women were invited to participate in an interactive session focused on the importance
+                            of menstrual hygiene, sanitation, and overall well-being.
                         </p>
                     </div>
-                    <div class="md:col-span-4 bg-surface-container-low p-4 sm:p-6 md:p-8 rounded-3xl border border-rose-100 flex flex-col items-center justify-center text-center">
-                        <span class="text-3xl md:text-3xl lg:text-5xl font-headline font-extrabold text-rose-600 mb-2">100+</span>
-                        <p class="text-sm font-bold text-stone-500 uppercase tracking-widest leading-tight">Women <br> Empowered</p>
+                    <div
+                        class="md:col-span-4 bg-surface-container-low p-4 sm:p-6 md:p-8 rounded-3xl border border-rose-100 flex flex-col items-center justify-center text-center">
+                        <span
+                            class="text-3xl md:text-3xl lg:text-5xl font-headline font-extrabold text-rose-600 mb-2">1000+</span>
+                        <p class="text-sm font-bold text-stone-500 uppercase tracking-widest leading-tight">Women <br>
+                            Empowered</p>
                     </div>
                 </div>
             </section>
@@ -117,10 +163,12 @@
             <section class="reveal">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:p-6 md:p-8">
                     <figure class="rounded-3xl overflow-hidden shadow-lg border border-outline-variant aspect-video">
-                        <img src="assets/images/menstrual_hygiene_3.png" alt="Distribution session" class="w-full h-full object-cover">
+                        <img src="assets/images/menstrual_hygiene_3.png" alt="Distribution session"
+                            class="w-full h-full object-cover">
                     </figure>
                     <figure class="rounded-3xl overflow-hidden shadow-lg border border-outline-variant aspect-video">
-                        <img src="assets/images/menstrual_hygiene_4.jpg" alt="Mrs Misra distributing pads" class="w-full h-full object-cover">
+                        <img src="assets/images/menstrual_hygiene_4.jpg" alt="Mrs Misra distributing pads"
+                            class="w-full h-full object-cover">
                     </figure>
                 </div>
             </section>
@@ -129,17 +177,23 @@
             <section class="reveal">
                 <div class="editorial-grid gap-6 sm:p-6 md:p-12 items-center">
                     <div class="col-span-12 lg:col-span-6 space-y-6">
-                        <h2 class="text-3xl font-headline font-bold text-primary tracking-tight">Direct Engagement & Trust</h2>
+                        <h2 class="text-3xl font-headline font-bold text-primary tracking-tight">Direct Engagement &
+                            Trust</h2>
                         <p class="text-lg text-on-surface-variant leading-relaxed">
-                            The initiative was led by <strong>Mrs. Sunaina Misra</strong>, Director of Vanprastha Foundation, who personally engaged with the women. She took time to understand their challenges, listen to their concerns, and openly discuss their needs in a supportive and respectful environment.
+                            The initiative was led by <strong>Mrs. Sunaina Misra</strong>, Director of Vanprastha
+                            Foundation, who personally engaged with the women. She took time to understand their
+                            challenges, listen to their concerns, and openly discuss their needs in a supportive and
+                            respectful environment.
                         </p>
                         <p class="text-lg text-on-surface-variant leading-relaxed">
-                            This direct interaction helped build trust and encouraged meaningful conversations around topics that are often overlooked or stigmatized.
+                            This direct interaction helped build trust and encouraged meaningful conversations around
+                            topics that are often overlooked or stigmatized.
                         </p>
                     </div>
                     <div class="col-span-12 lg:col-span-6">
                         <div class="rounded-3xl overflow-hidden shadow-xl aspect-square">
-                            <img src="assets/images/menstrual_hygiene_5.jpg" alt="Interactive session" class="w-full h-full object-cover">
+                            <img src="assets/images/menstrual_hygiene_5.jpg" alt="Interactive session"
+                                class="w-full h-full object-cover">
                         </div>
                     </div>
                 </div>
@@ -152,12 +206,15 @@
                         <span class="material-symbols-outlined text-[15rem]">female</span>
                     </div>
                     <div class="relative z-10">
-                        <h3 class="text-3xl font-headline font-bold mb-8 tracking-tight italic">Knowledge as a Foundation</h3>
+                        <h3 class="text-3xl font-headline font-bold mb-8 tracking-tight italic">Knowledge as a
+                            Foundation</h3>
                         <p class="text-2xl font-headline leading-tight mb-8">
                             "An informed and healthy woman becomes the foundation of a clean and aware household."
                         </p>
                         <p class="text-lg opacity-90 leading-relaxed">
-                            When women are educated about hygiene, the impact extends beyond the individual, influencing families and the broader community. The initiative aimed to normalize conversations and empower women with knowledge they can carry forward.
+                            When women are educated about hygiene, the impact extends beyond the individual, influencing
+                            families and the broader community. The initiative aimed to normalize conversations and
+                            empower women with knowledge they can carry forward.
                         </p>
                     </div>
                 </div>
@@ -168,20 +225,27 @@
                 <div class="space-y-8 text-center max-w-3xl mx-auto">
                     <h2 class="text-3xl font-headline font-bold text-primary tracking-tight">Kumaoni Celebration</h2>
                     <p class="text-lg text-on-surface-variant leading-relaxed">
-                        The interaction concluded on a joyful and culturally rich note, as the women came together to celebrate through traditional <strong>Kumaoni music and dance</strong>. This moment of shared expression reflected their enthusiasm and unity, highlighting the importance of creating safe, inclusive spaces.
+                        The interaction concluded on a joyful and culturally rich note, as the women came together to
+                        celebrate through traditional <strong>Kumaoni music and dance</strong>. This moment of shared
+                        expression reflected their enthusiasm and unity, highlighting the importance of creating safe,
+                        inclusive spaces.
                     </p>
                     <figure class="rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
-                        <img src="assets/images/menstrual_hygiene_1.jpg" alt="Traditional celebration" class="w-full object-cover">
+                        <img src="assets/images/menstrual_hygiene_1.jpg" alt="Traditional celebration"
+                            class="w-full object-cover">
                     </figure>
                 </div>
             </section>
 
             <!-- Final CTA -->
             <section class="reveal text-center pt-12">
-                <div class="max-w-2xl mx-auto p-6 sm:p-6 md:p-12 rounded-3xl bg-surface-container-low border border-rose-200">
+                <div
+                    class="max-w-2xl mx-auto p-6 sm:p-6 md:p-12 rounded-3xl bg-surface-container-low border border-rose-200">
                     <h3 class="text-2xl font-headline font-bold text-primary mb-4">Uplifting an entire society</h3>
-                    <p class="text-stone-600 mb-10 leading-relaxed">Through this effort, we continue to foster a culture of dignity and awareness. Your support helps us reach more villages.</p>
-                    <a href="contribute.html" class="inline-flex items-center gap-2 font-bold px-5 sm:px-6 md:px-10 py-5 bg-rose-600 text-white rounded-xl hover:scale-105 transition-transform shadow-lg shadow-rose-900/10">
+                    <p class="text-stone-600 mb-10 leading-relaxed">Through this effort, we continue to foster a culture
+                        of dignity and awareness. Your support helps us reach more villages.</p>
+                    <a href="contribute.html"
+                        class="inline-flex items-center gap-2 font-bold px-5 sm:px-6 md:px-10 py-5 bg-rose-600 text-white rounded-xl hover:scale-105 transition-transform shadow-lg shadow-rose-900/10">
                         Support Hygiene Kits <span class="material-symbols-outlined">heart_plus</span>
                     </a>
                 </div>
@@ -191,12 +255,34 @@
     </main>
 
     <!-- Footer -->
-    <footer class="w-full bg-stone-100 border-t border-stone-200">
-        <div class="px-5 sm:px-6 md:px-12 py-16 w-full max-w-screen-2xl mx-auto text-center">
-            <div class="text-lg font-bold text-emerald-900 font-headline mb-4">Vanprastha Foundation</div>
-            <p class="text-stone-500 text-sm tracking-wide font-body">&copy; <script>document.write(new Date().getFullYear())</script> Vanprastha Foundation. New Delhi</p>
+    <footer class="w-full mt-12 bg-white border-t border-stone-200/50">
+        <div class="flex flex-col md:flex-row justify-between items-center px-5 sm:px-6 md:px-12 py-16 w-full max-w-screen-2xl mx-auto">
+            <div class="mb-8 md:mb-0 text-center md:text-left">
+                <div class="text-lg font-bold text-emerald-900 font-headline mb-3">Vanprastha Foundation</div>
+                <p class="text-stone-500 text-sm tracking-wide font-body space-y-1">
+                    <span class="block"><i class="fas fa-map-marker-alt text-emerald-700 mr-1"></i> <span class="font-semibold text-stone-600">Head Office:</span> Village Ratkhal, PO Dunagiri, Dwarahat,<br>&nbsp;&nbsp;&nbsp;&nbsp;Dist. Almora, Uttarakhand &ndash; 263653</span>
+                    <span class="block mt-1"><i class="fas fa-map-marker-alt text-emerald-700 mr-1"></i> <span class="font-semibold text-stone-600">Branch Office:</span> AD-13, LGF, Tagore Garden,<br>&nbsp;&nbsp;&nbsp;&nbsp;New Delhi &ndash; 110027</span>
+                    <span class="block mt-2">
+                        <i class="fas fa-mobile-alt text-emerald-700 mr-1"></i>
+                        <a href="tel:+919289526777" class="hover:text-emerald-700 transition-colors">+91 92895 26777</a>
+                    </span>
+                    <span class="block">
+                        <i class="fas fa-phone text-emerald-700 mr-1"></i>
+                        <a href="tel:+911145631889" class="hover:text-emerald-700 transition-colors">011 4563 1889</a>
+                    </span>
+                    <span class="block mt-2 text-stone-400">&copy; <span id="year-footer"></span> Vanprastha Foundation.</span>
+                </p>
+            </div>
+            <div class="flex gap-6 sm:p-6 md:p-12 font-headline text-sm font-semibold uppercase tracking-widest text-stone-600">
+                <a class="hover:text-emerald-700 transition-colors" href="transparency.html">Governance</a>
+                <a class="hover:text-emerald-700 transition-colors" href="faq.html">FAQ</a>
+                <a class="hover:text-emerald-700 transition-colors" href="media.html">Media</a>
+            </div>
         </div>
     </footer>
+    <script>
+        document.getElementById("year-footer") && (document.getElementById("year-footer").textContent = new Date().getFullYear());
+    </script>
 
     <script>
         const reveals = document.querySelectorAll('.reveal');
@@ -212,4 +298,5 @@
         revealOnScroll();
     </script>
 </body>
+
 </html>
