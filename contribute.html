@@ -134,17 +134,31 @@
     <footer class="w-full mt-12 bg-white border-t border-stone-200/50">
         <div class="flex flex-col md:flex-row justify-between items-center px-5 sm:px-6 md:px-12 py-16 w-full max-w-screen-2xl mx-auto">
             <div class="mb-8 md:mb-0 text-center md:text-left">
-                <div class="text-lg font-bold text-emerald-900 font-headline mb-2">Vanprastha Foundation</div>
-                <p class="text-stone-500 text-sm tracking-wide font-body">
-                    &copy; <span id="year"></span> Vanprastha Foundation. New Delhi
+                <div class="text-lg font-bold text-emerald-900 font-headline mb-3">Vanprastha Foundation</div>
+                <p class="text-stone-500 text-sm tracking-wide font-body space-y-1">
+                    <span class="block"><i class="fas fa-map-marker-alt text-emerald-700 mr-1"></i> <span class="font-semibold text-stone-600">Head Office:</span> Village Ratkhal, PO Dunagiri, Dwarahat,<br>&nbsp;&nbsp;&nbsp;&nbsp;Dist. Almora, Uttarakhand &ndash; 263653</span>
+                    <span class="block mt-1"><i class="fas fa-map-marker-alt text-emerald-700 mr-1"></i> <span class="font-semibold text-stone-600">Branch Office:</span> AD-13, LGF, Tagore Garden,<br>&nbsp;&nbsp;&nbsp;&nbsp;New Delhi &ndash; 110027</span>
+                    <span class="block mt-2">
+                        <i class="fas fa-mobile-alt text-emerald-700 mr-1"></i>
+                        <a href="tel:+919289526777" class="hover:text-emerald-700 transition-colors">+91 92895 26777</a>
+                    </span>
+                    <span class="block">
+                        <i class="fas fa-phone text-emerald-700 mr-1"></i>
+                        <a href="tel:+911145631889" class="hover:text-emerald-700 transition-colors">011 4563 1889</a>
+                    </span>
+                    <span class="block mt-2 text-stone-400">&copy; <span id="year-footer"></span> Vanprastha Foundation.</span>
                 </p>
             </div>
-            <div class="flex gap-12 font-headline text-xs font-semibold uppercase tracking-widest text-stone-600">
-                <a class="hover:text-emerald-700 transition-colors" href="index.html">Home</a>
-                <a class="hover:text-emerald-700 transition-colors" href="faq.html">Help</a>
+            <div class="flex gap-6 sm:p-6 md:p-12 font-headline text-sm font-semibold uppercase tracking-widest text-stone-600">
+                <a class="hover:text-emerald-700 transition-colors" href="transparency.html">Governance</a>
+                <a class="hover:text-emerald-700 transition-colors" href="faq.html">FAQ</a>
+                <a class="hover:text-emerald-700 transition-colors" href="media.html">Media</a>
             </div>
         </div>
     </footer>
+    <script>
+        document.getElementById("year-footer") && (document.getElementById("year-footer").textContent = new Date().getFullYear());
+    </script>
 
     <script type="text/javascript">
         document.getElementById("year").textContent = new Date().getFullYear();
