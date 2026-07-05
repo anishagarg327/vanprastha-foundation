@@ -5,7 +5,7 @@
     radial-gradient(circle at 50% 90%, rgba(200, 255, 235, 0.18), transparent 28%),
     linear-gradient(180deg, #f2f4f8 0%, #e9edf3 40%, #f6f8fb 100%);
   color: #171c20;
-  overflow: hidden;
+  overflow: clip;
 }
 
 .topbar {
@@ -59,6 +59,7 @@
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .nav-links.open {
@@ -72,6 +73,44 @@
   text-decoration: none;
   color: #334155;
   font-weight: 600;
+}
+
+.lang-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(21, 66, 18, 0.05);
+  border: 1px solid rgba(21, 66, 18, 0.15);
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #475569;
+  transition: all 0.2s ease;
+  user-select: none;
+  line-height: 1;
+}
+
+.lang-toggle-btn:hover {
+  background: rgba(21, 66, 18, 0.1);
+  border-color: rgba(21, 66, 18, 0.25);
+  transform: translateY(-1px);
+}
+
+.lang-toggle-btn span {
+  transition: color 0.2s ease, font-weight 0.2s ease;
+}
+
+.lang-toggle-btn .active-lang {
+  color: #154212;
+  font-weight: 800;
+}
+
+.lang-divider {
+  color: rgba(148, 163, 184, 0.4);
+  font-weight: 400;
 }
 
 .donate-btn {
@@ -779,63 +818,152 @@
 }
 
 .footer {
-  background: white;
-  border-top: 1px solid rgba(148, 163, 184, 0.2);
-  padding: 2rem 0;
+  background: linear-gradient(135deg, #0e290c 0%, #051604 100%);
+  border-top: 1px solid rgba(74, 222, 128, 0.15);
+  padding: 4rem 2rem 2rem;
+  color: #cbd5e1;
 }
 
 .footer-inner {
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.footer-branding {
-  max-width: 55%;
-}
-
-.footer-branding div {
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: #154212;
-  margin-bottom: 1rem;
-}
-
-.footer-branding p {
   display: grid;
-  gap: 0.5rem;
-  color: #475569;
-  line-height: 1.7;
+  grid-template-columns: 2fr 1.2fr 2fr;
+  gap: 4rem;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Left Column: branding & motive */
+.footer-logo-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-logo-brand img {
+  width: 48px;
+  height: 48px;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
+  background: white;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.footer-logo-brand h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #ffffff;
   margin: 0;
+  letter-spacing: -0.02em;
 }
 
-.footer-branding a {
-  text-decoration: none;
-  color: #154212;
+.footer-motive-text {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #94a3b8;
+  margin: 0;
+  max-width: 360px;
 }
 
-.footer-links {
+/* Middle Column: quick links */
+.footer-links-col h4,
+.footer-contact-col h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  position: relative;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.footer-links-col h4::after,
+.footer-contact-col h4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 2rem;
+  height: 2px;
+  background: #22c55e;
+  border-radius: 99px;
+}
+
+.footer-links-list {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
 }
 
-.footer-links a {
-  color: #475569;
+.footer-links-list a {
+  color: #94a3b8;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-links-list a:hover {
+  color: #4ade80;
+  transform: translateX(4px);
+}
+
+/* Right Column: contact details */
+.contact-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.contact-item {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #94a3b8;
+  display: block;
+}
+
+.contact-item.font-semibold {
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.contact-item a {
+  color: #4ade80;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.contact-item a:hover {
+  color: #86efac;
+  text-decoration: underline;
+}
+
+/* Bottom Copyright section */
+.footer-bottom {
+  max-width: 1200px;
+  margin: 3rem auto 0;
+}
+
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .footer-note {
-  max-width: 1200px;
-  margin: 1.5rem auto 0;
+  padding-top: 1.5rem;
   text-align: center;
   color: #64748b;
-  letter-spacing: 0.02em;
+  font-size: 0.85rem;
+  margin: 0;
 }
 
 @media (max-width: 1024px) {
@@ -879,9 +1007,19 @@
     border-bottom: 1px solid rgba(148, 163, 184, 0.15);
   }
 
+  .nav-links .lang-toggle-btn {
+    align-self: flex-start;
+    margin: 1rem 0 0.5rem;
+  }
+
   .initiative-card-images,
-  .acronym-grid {
+  .acronym-grid,
+  .footer-inner {
     grid-template-columns: 1fr;
+  }
+
+  .footer-inner {
+    gap: 2.5rem;
   }
 }
 
