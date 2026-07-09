@@ -123,6 +123,7 @@ const content = {
         description: 'A landmark collaboration bringing essential primary healthcare, dental services, and free medicines to over 1,000 patients in remote Himalayan communities.',
         href: 'medical-camp.html',
         image: '/images/medical_camp_5.jpg',
+        images: ['/images/medical_camp_2.jpg', '/images/medical_camp_4.jpg'],
         prominent: true,
       },
       {
@@ -161,7 +162,239 @@ const content = {
       { letter: 'T', title: 'Tradition', description: 'Honouring indigenous knowledge and Kumaoni cultural heritage as foundations of change.' },
       { letter: 'H', title: 'Harmony', description: 'Fostering peaceful coexistence between human communities and the natural world.' },
       { letter: 'A', title: 'Accountability', description: 'Upholding the highest standards of transparency, governance, and fiduciary responsibility.' },
-    ]
+    ],
+    narrativeDetails: {
+      'medical-camp': {
+        label: 'HEALTHCARE OUTREACH',
+        title: 'Bridging the Healthcare Gap',
+        subtitle: 'Bringing expert medical and dental services to the remote heart of the Himalayas.',
+        image: '/images/medical_camp_5.jpg',
+        badgeColor: '#dc2626',
+        blocks: [
+          {
+            type: 'intro',
+            heading: 'Providing Free Essential Healthcare',
+            paragraphs: [
+              'On July 8th 2025, Vanprastha Foundation organized a Free Medical & Dental Camp in collaboration with BUDS, bringing essential healthcare services directly to the local community.',
+              'Held from 9 AM to 12 noon, the camp witnessed active participation from villagers who often face limited access to quality medical facilities due to geographical challenges.'
+            ],
+            cardTitle: 'COLLABORATORS',
+            cardItems: ['BUDS India', 'Vanprastha Foundation']
+          },
+          {
+            type: 'two-column',
+            leftType: 'text',
+            leftContent: {
+              heading: 'Led by Excellence',
+              text: 'The camp was led by a team of esteemed medical professionals, including:',
+              listItems: [
+                '🏥 Dr. Rajeev Seth (Medical Director, CHDC)',
+                '🩺 Dr. Professor Tulika Seth (AIIMS)',
+                '🦷 Dr. Aalok Tiwari (Dental Surgeon)'
+              ]
+            },
+            rightType: 'image',
+            rightContent: {
+              src: '/images/medical_camp_4.jpg',
+              alt: 'Prof Tulika Seth attending Patients'
+            }
+          },
+          {
+            type: 'breakout-image',
+            src: '/images/medical_camp_3.jpg',
+            alt: 'Villager at Medical Camp Banner',
+            caption: 'The local community welcomes medical care: Camp banner hanging at Ratkhal, Dwarahat.'
+          },
+          {
+            type: 'two-column',
+            theme: 'green',
+            leftType: 'text',
+            leftContent: {
+              heading: 'Insights from the Mountain Side',
+              text: 'An insightful observation made by the doctors highlighted the unique benefits of mountain life — lower stress levels, reduced incidence of diabetes, and fewer heart-related conditions.'
+            },
+            rightType: 'text',
+            rightContent: {
+              text: 'However, many cases involved untreated injuries and manageable conditions like sugar imbalances, emphasizing the need for timely medical attention and awareness.'
+            }
+          },
+          {
+            type: 'two-column',
+            leftType: 'text',
+            leftContent: {
+              heading: 'The Spirit of Seva',
+              text: 'The initiative concluded on a heartwarming note with a traditional bhandara, where villagers and volunteers came together to share a wholesome meal. This not only strengthened community bonds but also reflected the spirit of seva that defines Vanprastha Foundation. Through such initiatives, we continue to bridge healthcare gaps while fostering a culture of care, awareness, and community well-being.'
+            },
+            rightType: 'image',
+            rightContent: {
+              src: '/images/medical_camp_1.jpg',
+              alt: 'Traditional Lighting Ceremony'
+            }
+          }
+        ]
+      },
+      'punarjeevan': {
+        label: 'ENVIRONMENTAL CARE',
+        title: 'Project Punarjeevan',
+        subtitle: 'Reviving the Himalayan Forests: A mission to restore and rejuvenate the damaged landscape of Kumaon.',
+        image: '/images/punarjeevan1.jpg',
+        badgeColor: '#16a34a',
+        blocks: [
+          {
+            type: 'intro',
+            heading: 'The Ecological Crisis of 2025',
+            paragraphs: [
+              'In the summer of 2025, the serene forests of Kumaon in Uttarakhand, particularly around Kukuchhina near Dwarahat, were severely impacted by devastating forest fires. What once stood as a thriving ecosystem of rich biodiversity was reduced to charred land, threatening not only wildlife but also the livelihoods of local communities dependent on these forests.'
+            ],
+            cardTitle: 'IMPACT METRICS',
+            cardItems: [
+              '500+ Trees Planted',
+              'Native Endemic Species Used',
+              'Community-Led Forest Protection'
+            ]
+          },
+          {
+            type: 'two-column',
+            leftType: 'image',
+            leftContent: {
+              src: '/images/punarjeevan whatsapp.png',
+              alt: 'Ecological Crisis Impact'
+            },
+            rightType: 'quote',
+            rightContent: {
+              text: 'What once stood as a thriving ecosystem of rich biodiversity was reduced to charred land, threatening not only wildlife but also the livelihoods of local communities dependent on these forests.'
+            }
+          },
+          {
+            type: 'two-column',
+            leftType: 'text',
+            leftContent: {
+              heading: 'Project Punarjeevan: A Mission to Restore',
+              text: 'In response to this ecological crisis, Vanprastha Foundation initiated Project Punarjeevan — a mission to restore and rejuvenate the damaged Himalayan landscape. Staying true to the philosophy of harmony between humans and nature, the foundation undertook a large-scale plantation drive, successfully planting over 500 endemic tree species native to the region.'
+            },
+            rightType: 'text',
+            rightContent: {
+              text: 'Our choice of endemic species ensures that the new growth is resilient, supports local pollinators, and restores the natural water retention capacity of the soil—critical for preventing future environmental degradation.'
+            }
+          },
+          {
+            type: 'breakout-image',
+            src: '/images/punarjeevan1.jpg',
+            alt: 'Local communities planting saplings',
+            caption: 'Local volunteers and foundation members working together to plant 500+ endemic saplings in the charred slopes.'
+          },
+          {
+            type: 'two-column',
+            leftType: 'text',
+            leftContent: {
+              heading: 'Rooted in Community',
+              text: 'What made this initiative truly impactful was the active participation of local village communities. Their knowledge of the land, climate, and native species played a crucial role in ensuring that the plantation was both ecologically appropriate and sustainable.'
+            },
+            rightType: 'text',
+            rightContent: {
+              heading: 'Sustainable Livelihoods',
+              text: 'By involving local families in the nursery management and systematic planting process, the project also generates sustainable forest-based livelihoods. This community stewardship ensures that the saplings are protected and nurtured throughout their critical early growth stages.'
+            }
+          }
+        ]
+      },
+      'pathshala': {
+        label: 'EDUCATION INITIATIVE',
+        title: 'Masti Ki Pathshala',
+        subtitle: 'Nurturing curiosity and empowering the next generation of rural Himalayan minds.',
+        image: '/images/klkhatterclass1.jpg',
+        badgeColor: '#d97706',
+        blocks: [
+          {
+            type: 'intro',
+            heading: 'Transforming Lives Through Learning',
+            paragraphs: [
+              'Education has the power to transform lives, yet for many children in rural areas, access to quality learning remains limited. Recognizing this gap, Vanprastha Foundation initiated a heartfelt effort to bring learning closer to young minds through Masti Ki Pathshala — a joyful and engaging educational experience.'
+            ],
+            cardTitle: 'PROGRAMME SCOPE',
+            cardItems: [
+              '100+ Children Enrolled',
+              'Volunteer-Led Mentorship',
+              'Interactive Curriculum'
+            ]
+          },
+          {
+            type: 'breakout-image',
+            src: '/images/klkhatterclass2.jpg',
+            alt: 'Masti Ki Pathshala Class in Action',
+            caption: 'Nurturing curiosity and creative skills: Underprivileged children participating in interactive learning sessions.'
+          },
+          {
+            type: 'two-column',
+            leftType: 'text',
+            leftContent: {
+              heading: 'Beyond the Classroom',
+              text: 'Masti Ki Pathshala provides a dynamic, non-formal learning ecosystem for underprivileged children in remote mountain villages. Our weekend curriculum focuses on project-based learning, basic science experiments, conversational English, creative arts, and environmental awareness.'
+            },
+            rightType: 'text',
+            rightContent: {
+              heading: 'Empowering Minds',
+              text: 'Through interactive storytelling, games, and mentorship by dedicated volunteers, we aim to bridge the educational gap, instilling curiosity, confidence, and a lifelong love for learning in young rural minds.'
+            }
+          }
+        ]
+      },
+      'sanitary-drive': {
+        label: "WOMEN'S HEALTH",
+        title: 'Health, Dignity & Informed Awareness',
+        subtitle: 'Normalizing conversations and empowering over 1000+ women in rural Uttarakhand.',
+        image: '/images/menstrual_hygiene_2.jpg',
+        badgeColor: '#db2777',
+        blocks: [
+          {
+            type: 'intro',
+            heading: 'Breaking Taboos, Building Awareness',
+            paragraphs: [
+              'Access to menstrual hygiene and awareness remains a significant challenge in many rural communities. Addressing this critical need, Vanprastha Foundation organized a Sanitary Pads Distribution Drive aimed at promoting health, dignity, and informed awareness among women.',
+              'Rural women were invited to participate in an interactive session focused on the importance of menstrual hygiene, sanitation, and overall well-being.'
+            ],
+            cardTitle: 'KEY SUCCESS',
+            cardItems: [
+              '1000+ Women Benefited',
+              'Biodegradable Pads Distributed',
+              'Adolescent Health Check-ups Conducted'
+            ]
+          },
+          {
+            type: 'two-column',
+            leftType: 'image',
+            leftContent: {
+              src: '/images/menstrual_hygiene_3.png',
+              alt: 'Distribution session'
+            },
+            rightType: 'image',
+            rightContent: {
+              src: '/images/menstrual_hygiene_4.jpg',
+              alt: 'Mrs Misra distributing pads'
+            }
+          },
+          {
+            type: 'two-column',
+            leftType: 'text',
+            leftContent: {
+              heading: 'Direct Engagement & Trust',
+              text: 'The initiative was led by Mrs. Sunaina Misra, Director of Vanprastha Foundation, who personally engaged with the women. She took time to understand their challenges, listen to their concerns, and openly discuss their needs in a supportive and respectful environment. This direct interaction helped build trust and encouraged meaningful conversations around topics that are often overlooked or stigmatized. By distributing high-quality, biodegradable sanitary pads and eco-friendly disposal bags, we ensure safety and dignity.'
+            },
+            rightType: 'image',
+            rightContent: {
+              src: '/images/menstrual_hygiene_5.jpg',
+              alt: 'Interactive session'
+            }
+          },
+          {
+            type: 'breakout-image',
+            src: '/images/menstrual_hygiene_1.jpg',
+            alt: 'Traditional celebration',
+            caption: 'Celebrating health and dignity: A gathering of Kumaoni women collectives at the conclusion of the health drive.'
+          }
+        ]
+      }
+    }
   },
   hi: {
     brandName: 'वनप्रस्थ फाउंडेशन',
@@ -321,7 +554,209 @@ const content = {
       { letter: 'T', title: 'परंपरा', description: 'बदलाव के आधार के रूप में स्वदेशी ज्ञान और कुमाऊँनी सांस्कृतिक विरासत का सम्मान करना।' },
       { letter: 'H', title: 'सामंजस्य', description: 'मानव समुदायों और प्राकृतिक दुनिया के बीच शांतिपूर्ण सह-अस्तित्व को बढ़ावा देना।' },
       { letter: 'A', title: 'जवाबदेही', description: 'पारदर्शिता, शासन और वित्तीय जिम्मेदारी के उच्चतम मानकों को बनाए रखना।' },
-    ]
+    ],
+    narrativeDetails: {
+      'medical-camp': {
+        label: 'स्वास्थ्य सेवा आउटरीच',
+        title: 'स्वास्थ्य सेवा के अंतर को पाटना',
+        subtitle: 'हिमालय के सुदूर इलाकों में विशेषज्ञ चिकित्सा और दंत चिकित्सा सेवाएं लाना।',
+        image: '/images/medical_camp_5.jpg',
+        badgeColor: '#dc2626',
+        blocks: [
+          {
+            type: 'intro',
+            heading: 'नि:शुल्क आवश्यक स्वास्थ्य सेवा प्रदान करना',
+            paragraphs: [
+              '8 जुलाई 2025 को, वनप्रस्थ फाउंडेशन ने BUDS के सहयोग से एक नि:शुल्क चिकित्सा और दंत चिकित्सा शिविर का आयोजन किया, जिससे स्थानीय समुदाय को सीधे आवश्यक स्वास्थ्य सेवाएं मिल सकें।',
+              'सुबह 9 बजे से दोपहर 12 बजे तक आयोजित इस शिविर में उन ग्रामीणों की सक्रिय भागीदारी देखी गई, जिन्हें अक्सर भौगोलिक चुनौतियों के कारण गुणवत्तापूर्ण चिकित्सा सुविधाओं तक सीमित पहुंच का सामना करना पड़ता है।'
+            ],
+            cardTitle: 'सहयोगी',
+            cardItems: ['BUDS इंडिया', 'वनप्रस्थ फाउंडेशन']
+          },
+          {
+            type: 'two-column',
+            leftType: 'text',
+            leftContent: {
+              heading: 'उत्कृष्टता के नेतृत्व में',
+              text: 'शिविर का नेतृत्व एम्स, नई दिल्ली की प्रो. तूलिका सेठ और डॉ. राम सेठ सहित प्रतिष्ठित चिकित्सा पेशेवरों ने किया, जिन्होंने वंचितों की सेवा के लिए अपनी विशेषज्ञता का योगदान दिया।'
+            },
+            rightType: 'image',
+            rightContent: {
+              src: '/images/medical_camp_4.jpg',
+              alt: 'Prof Tulika Seth attending Patients'
+            }
+          },
+          {
+            type: 'breakout-image',
+            src: '/images/medical_camp_3.jpg',
+            alt: 'Villager at Medical Camp Banner',
+            caption: 'पहाड़ी क्षेत्रों से अंतर्दृष्टि: स्वास्थ्य सेवा पहुंचाने के लिए भौगोलिक चुनौतियों को पाटना।'
+          },
+          {
+            type: 'two-column',
+            leftType: 'text',
+            leftContent: {
+              heading: 'सेवा की भावना',
+              text: 'हमारे चिकित्सा शिविर सामान्य चिकित्सकों, दंत चिकित्सकों, बाल रोग विशेषज्ञों और स्त्री रोग विशेषज्ञों को सीधे गांवों में लाते हैं। हम मुफ्त परामर्श प्रदान करते हैं, बुनियादी नैदानिक परीक्षण करते हैं और दवाएं वितरित करते हैं। पारंपरिक दीप प्रज्वलन समारोह ने निस्वार्थ सेवा को समर्पित दिन की शुरुआत को चिह्नित किया।'
+            },
+            rightType: 'image',
+            rightContent: {
+              src: '/images/medical_camp_1.jpg',
+              alt: 'Traditional Lighting Ceremony'
+            }
+          }
+        ]
+      },
+      'punarjeevan': {
+        label: 'पर्यावरण संरक्षण',
+        title: 'प्रोजेक्ट पुनर्जीवन',
+        subtitle: 'हिमालयी वनों को पुनर्जीवित करना: कुमाऊं के क्षतिग्रस्त परिदृश्य को पुनर्स्थापित करने और फिर से जीवंत करने का मिशन।',
+        image: '/images/punarjeevan1.jpg',
+        badgeColor: '#16a34a',
+        blocks: [
+          {
+            type: 'intro',
+            heading: '2025 का पारिस्थितिक संकट',
+            paragraphs: [
+              '2025 की गर्मियों में, उत्तराखंड में कुमाऊं के शांत जंगल, विशेष रूप से द्वाराहाट के पास कुकुछीना के आसपास, विनाशकारी जंगल की आग से गंभीर रूप से प्रभावित हुए थे। जो कभी समृद्ध जैव विविधता का एक समृद्ध पारिस्थितिकी तंत्र था, वह जली हुई भूमि में बदल गया, जिससे न केवल वन्यजीवों को बल्कि इन जंगलों पर निर्भर स्थानीय समुदायों की आजीविका को भी खतरा पैदा हो गया।'
+            ],
+            cardTitle: 'प्रभाव के आंकड़े',
+            cardItems: [
+              '500+ पेड़ लगाए गए',
+              'मूल स्थानीय प्रजातियों का उपयोग',
+              'समुदाय-नेतृत्व में वन संरक्षण'
+            ]
+          },
+          {
+            type: 'two-column',
+            leftType: 'image',
+            leftContent: {
+              src: '/images/punarjeevan whatsapp.png',
+              alt: 'Ecological Crisis Impact'
+            },
+            rightType: 'quote',
+            rightContent: {
+              text: 'जो कभी समृद्ध जैव विविधता का एक समृद्ध पारिस्थितिकी तंत्र था, वह जली हुई भूमि में बदल गया, जिससे न केवल वन्यजीवों को बल्कि इन जंगलों पर निर्भर स्थानीय समुदायों की आजीविका को भी खतरा पैदा हो गया।'
+            }
+          },
+          {
+            type: 'breakout-image',
+            src: '/images/punarjeevan1.jpg',
+            alt: 'Local communities planting saplings',
+            caption: 'वनीकरण अभियानों के दौरान स्थानीय स्वयंसेवक और सामुदायिक संगठन स्थानीय मूल प्रजातियों के पौधे लगाते हुए।'
+          },
+          {
+            type: 'two-column',
+            leftType: 'text',
+            leftContent: {
+              heading: 'समुदाय में निहित',
+              text: 'प्रोजेक्ट पुनर्जीवन एक समर्पित वन पुनर्स्थापना पहल है जिसका उद्देश्य हिमालय के कुमाऊं क्षेत्र में निम्नीकृत वन भूमि को फिर से उपजाऊ बनाना है। स्थानीय सामुदायिक समूहों और वन विशेषज्ञों के साथ साझेदारी करके, हम बांझ (Oak), बुरांश (Rhododendron), और अल्डर जैसी स्थानिक, अग्नि-प्रतिरोधी और मिट्टी को समृद्ध करने वाली चौड़ी पत्ती वाली वृक्ष प्रजातियों का रोपण करते हैं। ये प्रयास जंगल की आग को रोकते हैं, स्थानीय जल स्रोतों में सुधार करते हैं और वन्यजीव आवासों को पुनर्स्थापित करते।'
+            },
+            rightType: 'text',
+            rightContent: {
+              heading: 'सतत आजीविका',
+              text: 'नर्सरी प्रबंधन और व्यवस्थित रोपण प्रक्रिया में स्थानीय परिवारों को शामिल करके, यह परियोजना पर्यावरण संरक्षण के साथ-साथ स्थानीय समुदायों के लिए सतत वन-आधारित आजीविका का निर्माण भी करती है। यह सामुदायिक जिम्मेदारी सुनिश्चित करती है कि पौधों की शुरुआती चरण में अच्छी देखभाल की जाए।'
+            }
+          }
+        ]
+      },
+      'pathshala': {
+        label: 'शिक्षा पहल',
+        title: 'मस्ती की पाठशाला',
+        subtitle: 'जिज्ञासा को बढ़ावा देना और ग्रामीण हिमालय के बच्चों को सशक्त बनाना।',
+        image: '/images/klkhatterclass1.jpg',
+        badgeColor: '#d97706',
+        blocks: [
+          {
+            type: 'intro',
+            heading: 'सीखने के माध्यम से जीवन बदलना',
+            paragraphs: [
+              'शिक्षा में जीवन बदलने की शक्ति है, फिर भी ग्रामीण क्षेत्रों के कई बच्चों के लिए गुणवत्तापूर्ण शिक्षा तक पहुंच सीमित है। इस अंतर को पहचानते हुए, वनप्रस्थ फाउंडेशन ने मस्ती की पाठशाला के माध्यम से सीखने को बच्चों के करीब लाने का एक दिली प्रयास शुरू किया — एक सुखद और आकर्षक शैक्षिक अनुभव।'
+            ],
+            cardTitle: 'कार्यक्रम का दायरा',
+            cardItems: [
+              '100+ बच्चे नामांकित',
+              'स्वयंसेवक-नेतृत्व में मार्गदर्शन',
+              'इंटरैक्टिव पाठ्यक्रम'
+            ]
+          },
+          {
+            type: 'breakout-image',
+            src: '/images/klkhatterclass2.jpg',
+            alt: 'Masti Ki Pathshala Class in Action',
+            caption: 'जिज्ञासा और रचनात्मक कौशल को बढ़ावा देना: इंटरैक्टिव सीखने के सत्रों में भाग लेते हुए वंचित बच्चे।'
+          },
+          {
+            type: 'two-column',
+            leftType: 'text',
+            leftContent: {
+              heading: 'कक्षा से परे',
+              text: 'मस्ती की पाठशाला सुदूर पर्वतीय गांवों में वंचित बच्चों के लिए एक गतिशील, गैर-औपचारिक शिक्षण पारिस्थितिकी तंत्र प्रदान करती है। हमारा सप्ताहांत पाठ्यक्रम परियोजना-आधारित शिक्षा, बुनियादी विज्ञान प्रयोगों, व्यावहारिक अंग्रेजी, रचनात्मक कलाओं और पर्यावरण जागरूकता पर केंद्रित है।'
+            },
+            rightType: 'text',
+            rightContent: {
+              heading: 'मन को सशक्त बनाना',
+              text: 'समर्पित स्वयंसेवकों द्वारा इंटरैक्टिव कहानी सुनाने, खेल और मार्गदर्शन के माध्यम से, हमारा उद्देश्य शैक्षिक अंतर को पाटना है, जिससे ग्रामीण बच्चों में जिज्ञासा, आत्मविश्वास और सीखने के प्रति प्रेम पैदा हो सके।'
+            }
+          }
+        ]
+      },
+      'sanitary-drive': {
+        label: 'महिला स्वास्थ्य',
+        title: 'स्वास्थ्य, सम्मान और जागरूकता',
+        subtitle: 'बातचीत को सामान्य बनाना और ग्रामीण उत्तराखंड में 1000 से अधिक महिलाओं को सशक्त बनाना।',
+        image: '/images/menstrual_hygiene_2.jpg',
+        badgeColor: '#db2777',
+        blocks: [
+          {
+            type: 'intro',
+            heading: 'रूढ़ियों को तोड़ना, जागरूकता बढ़ाना',
+            paragraphs: [
+              'ग्रामीण समुदायों में मासिक धर्म स्वच्छता और जागरूकता तक पहुंच एक महत्वपूर्ण चुनौती बनी हुई है। इस महत्वपूर्ण आवश्यकता को संबोधित करते हुए, वनप्रस्थ फाउंडेशन ने महिलाओं के स्वास्थ्य, सम्मान और जागरूकता को बढ़ावा देने के उद्देश्य से एक सेनेटरी पैड वितरण अभियान का आयोजन किया।',
+              'ग्रामीण महिलाओं को मासिक धर्म स्वच्छता, स्वच्छता और समग्र कल्याण के महत्व पर केंद्रित एक इंटरैक्टिव सत्र में भाग लेने के लिए आमंत्रित किया गया था।'
+            ],
+            cardTitle: 'प्रमुख सफलता',
+            cardItems: [
+              '1000+ महिलाओं को लाभ',
+              'बायोडिग्रेडेबल पैड्स का वितरण',
+              'किशोर स्वास्थ्य जांच आयोजित'
+            ]
+          },
+          {
+            type: 'two-column',
+            leftType: 'image',
+            leftContent: {
+              src: '/images/menstrual_hygiene_3.png',
+              alt: 'Distribution session'
+            },
+            rightType: 'image',
+            rightContent: {
+              src: '/images/menstrual_hygiene_4.jpg',
+              alt: 'Mrs Misra distributing pads'
+            }
+          },
+          {
+            type: 'two-column',
+            leftType: 'text',
+            leftContent: {
+              heading: 'प्रत्यक्ष जुड़ाव और विश्वास',
+              text: 'यह अभियान केवल उत्पाद वितरण से परे है। हम मासिक धर्म से जुड़ी रूढ़ियों को तोड़ने के लिए ग्रामीण उच्च विद्यालयों और ग्रामीण स्वास्थ्य केंद्रों में व्यापक शैक्षिक सत्र चलाते हैं। उच्च गुणवत्ता वाले, बायोडिग्रेडेबल सेनेटरी पैड और पर्यावरण-अनुकूल निपटान बैग वितरित करके, हम सुरक्षा और सम्मान सुनिश्चित करते हैं।'
+            },
+            rightType: 'image',
+            rightContent: {
+              src: '/images/menstrual_hygiene_5.jpg',
+              alt: 'Interactive session'
+            }
+          },
+          {
+            type: 'breakout-image',
+            src: '/images/menstrual_hygiene_1.jpg',
+            alt: 'Traditional celebration',
+            caption: 'स्वास्थ्य और सम्मान का उत्सव: स्वास्थ्य अभियान के समापन पर कुमाऊँनी ग्रामीण महिलाओं का जमावड़ा।'
+          }
+        ]
+      }
+    }
   }
 }
 
@@ -339,7 +774,41 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [lang, setLang] = useState('en')
+  const [volunteerSubmitted, setVolunteerSubmitted] = useState(false)
+  const [volunteerSubmitting, setVolunteerSubmitting] = useState(false)
   const statsRef = useRef(null)
+
+  const getInitialView = () => {
+    const path = window.location.pathname
+    if (path.includes('initiatives.html')) return 'initiatives'
+    if (path.includes('transparency.html')) return 'governance'
+    if (path.includes('media.html')) return 'media'
+    if (path.includes('awards.html')) return 'awards'
+    if (path.includes('faq.html')) return 'faq'
+    if (path.includes('medical-camp.html') || path.includes('medical-camp')) return 'medical-camp'
+    if (path.includes('punarjeevan.html') || path.includes('punarjeevan')) return 'punarjeevan'
+    if (path.includes('pathshala.html') || path.includes('pathshala')) return 'pathshala'
+    if (path.includes('sanitary-drive.html') || path.includes('sanitary-drive')) return 'sanitary-drive'
+    if (path.includes('contribute.html') || path.includes('contribute') || path.includes('donate')) return 'contribute'
+    if (path.includes('volunteer.html') || path.includes('volunteer')) return 'volunteer'
+    return 'home'
+  }
+  const [view, setView] = useState(getInitialView)
+
+  useEffect(() => {
+    const handlePopState = () => {
+      setView(getInitialView())
+    }
+    window.addEventListener('popstate', handlePopState)
+    return () => window.removeEventListener('popstate', handlePopState)
+  }, [])
+
+  const navigateTo = (path, viewName) => {
+    window.history.pushState({}, '', path)
+    setView(viewName)
+    setMenuOpen(false)
+    window.scrollTo({ top: 0, behavior: 'instant' })
+  }
 
   const t = content[lang]
 
@@ -390,11 +859,42 @@ function App() {
         </button>
 
         <nav className={menuOpen ? 'nav-links open' : 'nav-links'} aria-label="Primary navigation">
-          {t.navLinks.map((link) => (
-            <a key={link.label} href={link.href} onClick={() => setMenuOpen(false)}>
-              {link.label}
-            </a>
-          ))}
+          {t.navLinks.map((link) => {
+            let isActive = false
+            let targetView = 'home'
+            if (link.href.includes('initiatives.html')) {
+              isActive = view === 'initiatives'
+              targetView = 'initiatives'
+            } else if (link.href.includes('transparency.html')) {
+              isActive = view === 'governance'
+              targetView = 'governance'
+            } else if (link.href.includes('media.html')) {
+              isActive = view === 'media'
+              targetView = 'media'
+            } else if (link.href.includes('awards.html')) {
+              isActive = view === 'awards'
+              targetView = 'awards'
+            } else if (link.href.includes('faq.html')) {
+              isActive = view === 'faq'
+              targetView = 'faq'
+            } else {
+              isActive = view === 'home'
+              targetView = 'home'
+            }
+            return (
+              <a
+                key={link.label}
+                href={link.href}
+                className={isActive ? 'active' : ''}
+                onClick={(e) => {
+                  e.preventDefault()
+                  navigateTo(link.href, targetView)
+                }}
+              >
+                {link.label}
+              </a>
+            )
+          })}
           <button
             className="lang-toggle-btn"
             onClick={() => {
@@ -409,169 +909,560 @@ function App() {
           </button>
         </nav>
 
-        <a className="donate-btn" href="contribute.html">
+        <a
+          className="donate-btn"
+          href="contribute.html"
+          onClick={(e) => {
+            e.preventDefault()
+            navigateTo('contribute.html', 'contribute')
+          }}
+        >
           {t.donate}
         </a>
       </header>
 
       <main className="main-content">
-        <section className="hero-section">
-          <div className="hero-background-elements">
-            <div className="floating-item stethoscope">🩺</div>
-            <div className="floating-item syringe">💉</div>
-            <div className="floating-item eco-seed">🌱</div>
-            <div className="floating-item spark">✨</div>
-          </div>
-          <div className="hero-carousel">
-            <div className="carousel-track" style={{ transform: `translateX(-${activeSlide * 100}%)` }}>
-              {t.heroSlides.map((slide) => (
-                <article className="carousel-slide" key={slide.title}>
-                  <img src={slide.image} alt={slide.title} />
-                </article>
-              ))}
-            </div>
-            <div className="carousel-dots" aria-label="Carousel navigation">
-              {t.heroSlides.map((slide, index) => (
-                <button
-                  key={slide.title}
-                  className={index === activeSlide ? 'dot active' : 'dot'}
-                  onClick={() => setActiveSlide(index)}
-                  aria-label={`Show slide ${index + 1}`}
-                />
-              ))}
-            </div>
-            <div className="hero-info-card">
-              <span>{t.heroSlides[activeSlide].tag}</span>
-              <h3>{t.heroSlides[activeSlide].title}</h3>
-              <p>{t.heroSlides[activeSlide].text}</p>
-              <button onClick={() => setIsModalOpen(true)}>{t.exploreStory}</button>
-            </div>
-          </div>
-
-          <aside className="hero-panel" ref={statsRef}>
-            <span className="panel-eyebrow">{t.ourMission}</span>
-            <h2>{t.holisticTitle}</h2>
-            <p>{t.missionText}</p>
-            <div className="stats-grid">
-              {t.stats.map((item, index) => {
-                const value = counterValues[index]
-                const target = item.target || stats[index].target
-                const displayValue = item.displaySuffix && value === target ? `${value}${item.displaySuffix}` : value
-                return (
-                  <div key={item.label} className="stat-card" style={{ borderLeftColor: item.color }}>
-                    <span className="stat-category">{item.category}</span>
-                    <strong>{displayValue} {item.label.replace(/^\d+\+?\s*/, '')}</strong>
-                    <p>{item.description}</p>
-                  </div>
-                )
-              })}
-            </div>
-          </aside>
-        </section>
-
-        <section className="about-section">
-          <div className="about-image">
-            <img src="/images/kumaoni women.jpg" alt="Rural Women of Kumaon" />
-            <div className="about-overlay">
-              <h2>{t.holisticTitle}</h2>
-            </div>
-          </div>
-          <div className="about-copy">
-            <span className="eyebrow">{t.aboutTitle}</span>
-            <h3>
-              {t.aboutHeadingPrefix}
-              <span>{t.aboutHeadingHighlight}</span>
-              {t.aboutHeadingSuffix}
-            </h3>
-            <p>{t.aboutParagraph1}</p>
-            <p>{t.aboutParagraph2}</p>
-          </div>
-        </section>
-
-        <article className="acronym-card">
-          <div className="acronym-header">
-            <span>{t.whatWeStandFor}</span>
-            <p>{t.acronymSubtitle}</p>
-          </div>
-          <div className="acronym-grid">
-            {t.acronymItems.map((item) => (
-              <div key={item.letter} className="acronym-item">
-                <div className="acronym-letter">{item.letter}</div>
-                <div>
-                  <strong>{item.title}</strong>
-                  <p>{item.description}</p>
+        {view === 'home' && (
+          <>
+            <section className="hero-section">
+              <div className="hero-background-elements">
+                <div className="floating-item stethoscope">🩺</div>
+                <div className="floating-item syringe">💉</div>
+                <div className="floating-item eco-seed">🌱</div>
+                <div className="floating-item spark">✨</div>
+              </div>
+              <div className="hero-carousel">
+                <div className="carousel-track" style={{ transform: `translateX(-${activeSlide * 100}%)` }}>
+                  {t.heroSlides.map((slide) => (
+                    <article className="carousel-slide" key={slide.title}>
+                      <img src={slide.image} alt={slide.title} />
+                    </article>
+                  ))}
+                </div>
+                <div className="carousel-dots" aria-label="Carousel navigation">
+                  {t.heroSlides.map((slide, index) => (
+                    <button
+                      key={slide.title}
+                      className={index === activeSlide ? 'dot active' : 'dot'}
+                      onClick={() => setActiveSlide(index)}
+                      aria-label={`Show slide ${index + 1}`}
+                    />
+                  ))}
+                </div>
+                <div className="hero-info-card">
+                  <span>{t.heroSlides[activeSlide].tag}</span>
+                  <h3>{t.heroSlides[activeSlide].title}</h3>
+                  <p>{t.heroSlides[activeSlide].text}</p>
+                  <button onClick={() => setIsModalOpen(true)}>{t.exploreStory}</button>
                 </div>
               </div>
-            ))}
-          </div>
-          <div className="acronym-footer">{t.leadingPurpose}</div>
-        </article>
 
-        <section className="initiatives-section">
-          <div className="section-title-group">
-            <span>{t.groundProgrammes}</span>
-            <div className="section-title-row">
-              <h2>
-                {initPrefix} <span>{initHighlight}</span>
-              </h2>
-              <a href="initiatives.html">{t.viewAllInitiatives}</a>
+              <aside className="hero-panel" ref={statsRef}>
+                <span className="panel-eyebrow">{t.ourMission}</span>
+                <h2>{t.holisticTitle}</h2>
+                <p>{t.missionText}</p>
+                <div className="stats-grid">
+                  {t.stats.map((item, index) => {
+                    const value = counterValues[index]
+                    const target = item.target || stats[index].target
+                    const displayValue = item.displaySuffix && value === target ? `${value}${item.displaySuffix}` : value
+                    return (
+                      <div key={item.label} className="stat-card" style={{ borderLeftColor: item.color }}>
+                        <span className="stat-category">{item.category}</span>
+                        <strong>{displayValue} {item.label.replace(/^\d+\+?\s*/, '')}</strong>
+                        <p>{item.description}</p>
+                      </div>
+                    )
+                  })}
+                </div>
+              </aside>
+            </section>
+
+            <section className="about-section">
+              <div className="about-image">
+                <img src="/images/kumaoni women.jpg" alt="Rural Women of Kumaon" />
+                <div className="about-overlay">
+                  <h2>{t.holisticTitle}</h2>
+                </div>
+              </div>
+              <div className="about-copy">
+                <span className="eyebrow">{t.aboutTitle}</span>
+                <h3>
+                  {t.aboutHeadingPrefix}
+                  <span>{t.aboutHeadingHighlight}</span>
+                  {t.aboutHeadingSuffix}
+                </h3>
+                <p>{t.aboutParagraph1}</p>
+                <p>{t.aboutParagraph2}</p>
+              </div>
+            </section>
+
+            <article className="acronym-card">
+              <div className="acronym-header">
+                <span>{t.whatWeStandFor}</span>
+                <p>{t.acronymSubtitle}</p>
+              </div>
+              <div className="acronym-grid">
+                {t.acronymItems.map((item) => (
+                  <div key={item.letter} className="acronym-item">
+                    <div className="acronym-letter">{item.letter}</div>
+                    <div>
+                      <strong>{item.title}</strong>
+                      <p>{item.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className="acronym-footer">{t.leadingPurpose}</div>
+            </article>
+          </>
+        )}
+
+        {view === 'initiatives' && (
+          <section className="initiatives-section">
+            <div className="section-title-group">
+              <span>{t.groundProgrammes}</span>
+              <div className="section-title-row">
+                <h2>
+                  {initPrefix} <span>{initHighlight}</span>
+                </h2>
+              </div>
             </div>
-          </div>
 
-          <div className="initiatives-grid">
-            {t.initiatives.map((item) =>
-              item.hero ? (
-                <article key={item.title} className="initiative-hero">
-                  <img src={item.image} alt={item.title} />
-                  <div className="initiative-hero-overlay">
-                    <span>{item.category}</span>
-                    <h3>{item.title}</h3>
-                    <p>{item.description}</p>
-                    <div className="initiative-hero-actions">
-                      <a className="primary-link" href={item.href}>
-                        {lang === 'en' ? 'Read Full Narrative' : 'पूरी कहानी पढ़ें'}
-                      </a>
-                      <a className="secondary-link" href={item.ctaHref}>
-                        {item.cta}
+            <div className="initiatives-grid">
+              {t.initiatives.map((item) =>
+                item.hero ? (
+                  <article key={item.title} className="initiative-hero">
+                    <img src={item.image} alt={item.title} />
+                    <div className="initiative-hero-overlay">
+                      <span>{item.category}</span>
+                      <h3>{item.title}</h3>
+                      <p>{item.description}</p>
+                      <div className="initiative-hero-actions">
+                        <a
+                          className="primary-link"
+                          href={item.href}
+                          onClick={(e) => {
+                            e.preventDefault()
+                            navigateTo(item.href, 'punarjeevan')
+                          }}
+                        >
+                          {lang === 'en' ? 'Read Full Narrative' : 'पूरी कहानी पढ़ें'}
+                        </a>
+                        <a
+                          className="secondary-link"
+                          href={item.ctaHref}
+                          onClick={(e) => {
+                            e.preventDefault()
+                            navigateTo(item.ctaHref, 'contribute')
+                          }}
+                        >
+                          {item.cta}
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                ) : (
+                  <article key={item.title} className="initiative-card">
+                    <div className="initiative-card-copy">
+                      <span>{item.category}</span>
+                      <h3>{item.title}</h3>
+                      <p>{item.description}</p>
+                      <a
+                        href={item.href}
+                        onClick={(e) => {
+                          e.preventDefault()
+                          let viewName = 'medical-camp'
+                          if (item.href.includes('punarjeevan')) viewName = 'punarjeevan'
+                          else if (item.href.includes('pathshala')) viewName = 'pathshala'
+                          else if (item.href.includes('sanitary-drive')) viewName = 'sanitary-drive'
+                          navigateTo(item.href, viewName)
+                        }}
+                      >
+                        {lang === 'en' ? 'Read full narrative' : 'पूरी कहानी पढ़ें'}
                       </a>
                     </div>
-                  </div>
-                </article>
-              ) : (
-                <article key={item.title} className="initiative-card">
-                  <div className="initiative-card-copy">
-                    <span>{item.category}</span>
-                    <h3>{item.title}</h3>
-                    <p>{item.description}</p>
-                    <a href={item.href}>{lang === 'en' ? 'Read full narrative' : 'पूरी कहानी पढ़ें'}</a>
-                  </div>
-                  {item.images && (
-                    <div className="initiative-card-images">
-                      {item.images.map((src) => (
-                        <img key={src} src={src} alt={item.title} />
-                      ))}
+                    {item.images && (
+                      <div className="initiative-card-images">
+                        {item.images.map((src) => (
+                          <img key={src} src={src} alt={item.title} />
+                        ))}
+                      </div>
+                    )}
+                  </article>
+                )
+              )}
+            </div>
+          </section>
+        )}
+
+        {['medical-camp', 'punarjeevan', 'pathshala', 'sanitary-drive'].includes(view) && (
+          <article className="narrative-page">
+            <header className="narrative-hero-banner" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(${t.narrativeDetails[view].image})` }}>
+              <div className="narrative-hero-content">
+                <span className="narrative-badge" style={{ backgroundColor: t.narrativeDetails[view].badgeColor }}>{t.narrativeDetails[view].label}</span>
+                <h1 className="narrative-title">{t.narrativeDetails[view].title}</h1>
+                <p className="narrative-subtitle">{t.narrativeDetails[view].subtitle}</p>
+              </div>
+            </header>
+
+            <div className="narrative-blocks-container">
+              {t.narrativeDetails[view].blocks.map((block, bIdx) => {
+                if (block.type === 'intro') {
+                  return (
+                    <div key={bIdx} className="narrative-intro-block">
+                      <div className="narrative-intro-main">
+                        <h2 className="narrative-section-heading">{block.heading}</h2>
+                        {block.paragraphs.map((p, pIdx) => (
+                          <p key={pIdx} className="narrative-paragraph">{p}</p>
+                        ))}
+                      </div>
+                      <div className="narrative-info-card">
+                        <h3>{block.cardTitle}</h3>
+                        <ul>
+                          {block.cardItems.map((item, cIdx) => (
+                            <li key={cIdx}>{item}</li>
+                          ))}
+                        </ul>
+                      </div>
                     </div>
+                  )
+                }
+
+                if (block.type === 'two-column') {
+                  return (
+                    <div key={bIdx} className={block.theme === 'green' ? 'narrative-two-column-block green-theme' : 'narrative-two-column-block'}>
+                      <div className="narrative-column-left">
+                        {block.leftType === 'text' && (
+                          <>
+                            {block.leftContent.heading && <h3 className="narrative-column-heading">{block.leftContent.heading}</h3>}
+                            {block.leftContent.text && <p className="narrative-paragraph">{block.leftContent.text}</p>}
+                            {block.leftContent.listItems && (
+                              <ul className="narrative-bullet-list">
+                                {block.leftContent.listItems.map((item, idx) => (
+                                  <li key={idx}>{item}</li>
+                                ))}
+                              </ul>
+                            )}
+                          </>
+                        )}
+                        {block.leftType === 'image' && (
+                          <div className="narrative-image-wrapper">
+                            <img src={block.leftContent.src} alt={block.leftContent.alt} />
+                          </div>
+                        )}
+                      </div>
+                      <div className="narrative-column-right">
+                        {block.rightType === 'text' && (
+                          <>
+                            {block.rightContent.heading && <h3 className="narrative-column-heading">{block.rightContent.heading}</h3>}
+                            {block.rightContent.text && <p className="narrative-paragraph">{block.rightContent.text}</p>}
+                            {block.rightContent.listItems && (
+                              <ul className="narrative-bullet-list">
+                                {block.rightContent.listItems.map((item, idx) => (
+                                  <li key={idx}>{item}</li>
+                                ))}
+                              </ul>
+                            )}
+                          </>
+                        )}
+                        {block.rightType === 'image' && (
+                          <div className="narrative-image-wrapper">
+                            <img src={block.rightContent.src} alt={block.rightContent.alt} />
+                          </div>
+                        )}
+                        {block.rightType === 'quote' && (
+                          <blockquote className="narrative-quote-box">
+                            <p>“{block.rightContent.text}”</p>
+                          </blockquote>
+                        )}
+                      </div>
+                    </div>
+                  )
+                }
+
+                if (block.type === 'breakout-image') {
+                  return (
+                    <div key={bIdx} className="narrative-breakout-block">
+                      <div className="narrative-breakout-image">
+                        <img src={block.src} alt={block.alt} />
+                      </div>
+                      {block.caption && <p className="narrative-image-caption">{block.caption}</p>}
+                    </div>
+                  )
+                }
+
+                return null
+              })}
+
+
+            </div>
+          </article>
+        )}
+
+        {view === 'governance' && (
+          <section className="info-placeholder-section">
+            <h2>{t.governanceLink}</h2>
+            <p className="placeholder-text">
+              {lang === 'en'
+                ? 'Information about our transparency, governance structures, and financial reports will be published here soon.'
+                : 'हमारी पारदर्शिता, शासन संरचना और वित्तीय रिपोर्टों के बारे में जानकारी जल्द ही यहाँ प्रकाशित की जाएगी।'}
+            </p>
+          </section>
+        )}
+
+        {view === 'media' && (
+          <section className="info-placeholder-section">
+            <h2>{t.mediaLink}</h2>
+            <p className="placeholder-text">
+              {lang === 'en'
+                ? 'Our latest news coverage, press releases, and media galleries are under compilation and will be available soon.'
+                : 'हमारी नवीनतम समाचार कवरेज, प्रेस विज्ञप्तियां और media दीर्घाएं संकलन के अधीन हैं और जल्द ही उपलब्ध होंगी।'}
+            </p>
+          </section>
+        )}
+
+        {view === 'awards' && (
+          <section className="info-placeholder-section">
+            <h2>{lang === 'en' ? 'Awards & Recognition' : 'पुरस्कार और मान्यता'}</h2>
+            <p className="placeholder-text">
+              {lang === 'en'
+                ? 'A collection of accolades, certifications, and community recognitions received by the Foundation will be displayed here.'
+                : 'फाउंडेशन को प्राप्त प्रशंसापत्रों, प्रमाणपत्रों और सामुदायिक मान्यताओं का संग्रह यहाँ प्रदर्शित किया जाएगा।'}
+            </p>
+          </section>
+        )}
+
+        {view === 'faq' && (
+          <section className="info-placeholder-section">
+            <h2>{t.faqLink}</h2>
+            <p className="placeholder-text">
+              {lang === 'en'
+                ? 'Frequently asked questions about our programs, volunteer opportunities, and operational transparency are being updated.'
+                : 'हमारे कार्यक्रमों, स्वयंसेवक अवसरों और परिचालन पारदर्शिता के बारे में अक्सर पूछे जाने वाले प्रश्न अपडेट किए जा रहे हैं।'}
+            </p>
+          </section>
+        )}
+
+        {view === 'contribute' && (
+          <article className="narrative-page contribute-view-page">
+            <header className="contribute-header-banner">
+              <span className="narrative-badge" style={{ backgroundColor: '#154212' }}>
+                {lang === 'en' ? 'SECURE GIVING' : 'सुरक्षित दान'}
+              </span>
+              <h1 className="narrative-title">
+                {lang === 'en' ? (
+                  <>Support Our <span className="highlight-italic">Mission</span></>
+                ) : (
+                  <>हमारे मिशन का <span className="highlight-italic">समर्थन करें</span></>
+                )}
+              </h1>
+              <p className="narrative-subtitle">
+                {lang === 'en'
+                  ? "Scan the QR code below to contribute directly to our foundation's bank account. Your support fuels our efforts in the Himalayas."
+                  : "फाउंडेशन के बैंक खाते में सीधे योगदान करने के लिए नीचे दिए गए QR कोड को स्कैन करें। आपका सहयोग हिमालय में हमारे प्रयासों को गति देता है।"}
+              </p>
+            </header>
+
+            <div className="contribute-content-body">
+              <div className="qr-card-glass">
+                <div className="qr-gradient-bar"></div>
+                <div className="qr-image-wrapper">
+                  <img src="/images/qrcode.png" alt="Donation QR Code" />
+                </div>
+                <div className="qr-scan-title">
+                  <h3>{lang === 'en' ? 'SCAN TO PAY' : 'स्कैन करके भुगतान करें'}</h3>
+                  <p>{lang === 'en' ? 'UPI, Bank Transfer, or QR Scan' : 'UPI, बैंक ट्रांसफर या QR स्कैन'}</p>
+                </div>
+                <div className="qr-bank-details">
+                  <div className="bank-col">
+                    <span className="detail-label">{lang === 'en' ? 'BANK NAME' : 'बैंक का नाम'}</span>
+                    <strong className="detail-value">{lang === 'en' ? 'State Bank of India' : 'भारतीय स्टेट बैंक'}</strong>
+                  </div>
+                  <div className="bank-col text-right">
+                    <span className="detail-label">{lang === 'en' ? 'ACCOUNT HOLDER' : 'खाताधारक'}</span>
+                    <strong className="detail-value">{lang === 'en' ? 'Vanprastha Fdn.' : 'वनप्रस्थ फाउंडेशन'}</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tax-info-card">
+                <span className="tax-icon">✓</span>
+                <p>
+                  {lang === 'en' ? (
+                    <>All donations are tax-exempt under <strong>Section 80G</strong>. Please email your transaction screenshot to <strong>foundationvanprastha@gmail.com</strong> for your receipt.</>
+                  ) : (
+                    <>सभी दान <strong>धारा 80G</strong> के तहत कर-मुक्त हैं। कृपया अपनी रसीद प्राप्त करने के लिए अपने लेन-देन का स्क्रीनशॉट <strong>foundationvanprastha@gmail.com</strong> पर ईमेल करें।</>
                   )}
-                </article>
-              )
-            )}
-          </div>
-        </section>
-
-        <section className="cta-section">
-          <div className="cta-card">
-            <h2>{t.supportOurMission}</h2>
-            <p>{t.supportMissionText}</p>
-            <div className="cta-actions">
-              <a className="primary-btn" href="contribute.html">
-                {t.contributeNow}
-              </a>
-              <a className="secondary-btn" href="volunteer.html">
-                {t.becomeVolunteer}
-              </a>
+                </p>
+              </div>
             </div>
-          </div>
-        </section>
+          </article>
+        )}
+
+        {view === 'volunteer' && (
+          <article className="narrative-page volunteer-view-page">
+            <header className="contribute-header-banner">
+              <span className="narrative-badge" style={{ backgroundColor: '#154212' }}>
+                {lang === 'en' ? 'JOIN OUR COMMUNITY' : 'हमारे समुदाय से जुड़ें'}
+              </span>
+              <h1 className="narrative-title">
+                {lang === 'en' ? (
+                  <>Become a <span className="highlight-italic">Himalayan Guardian</span></>
+                ) : (
+                  <>हिमालय के <span className="highlight-italic">संरक्षक बनें</span></>
+                )}
+              </h1>
+              <p className="narrative-subtitle">
+                {lang === 'en'
+                  ? 'Thank you for choosing to volunteer with us. Your time and efforts are invaluable in helping us make a lasting impact on mountain lives.'
+                  : 'हमारे साथ स्वयंसेवक के रूप में जुड़ने का निर्णय लेने के लिए धन्यवाद। आपका समय और प्रयास पर्वतीय जीवन पर स्थायी प्रभाव डालने में हमारे लिए अमूल्य हैं।'}
+              </p>
+            </header>
+
+            <div className="volunteer-grid-container">
+              <div className="volunteer-info-column">
+                <div className="volunteer-paths-card">
+                  <h3>{lang === 'en' ? 'Volunteering Paths' : 'स्वयंसेवा के क्षेत्र'}</h3>
+                  <ul className="volunteer-paths-list">
+                    <li>
+                      <div className="path-icon">🎓</div>
+                      <div className="path-text">
+                        <strong>{lang === 'en' ? 'Education Mentor' : 'शिक्षा मार्गदर्शक'}</strong>
+                        <p>{lang === 'en' ? 'Teach children at Masti Ki Pathshala during weekends or through digital sessions.' : 'सप्ताहांत के दौरान या डिजिटल सत्रों के माध्यम से मस्ती की पाठशाला में बच्चों को पढ़ाएं।'}</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="path-icon">👥</div>
+                      <div className="path-text">
+                        <strong>{lang === 'en' ? 'Ground Volunteer' : 'धरातलीय स्वयंसेवक'}</strong>
+                        <p>{lang === 'en' ? 'Join our cleanliness drives, tree plantations, or medical camp coordination on-site.' : 'हमारे स्वच्छता अभियानों, पौधारोपण या चिकित्सा शिविर समन्वय में जमीनी स्तर पर भाग लें।'}</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="path-icon">💻</div>
+                      <div className="path-text">
+                        <strong>{lang === 'en' ? 'Digital Guardian' : 'डिजिटल संरक्षक'}</strong>
+                        <p>{lang === 'en' ? 'Support us remotely with social media, content creation, or UI/UX feedback.' : 'सोशल मीडिया, कंटेंट निर्माण या UI/UX फीडबैक के साथ दूरस्थ रूप से हमारा सहयोग करें।'}</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="did-you-know-card">
+                  <h4>{lang === 'en' ? 'Did You Know?' : 'क्या आप जानते हैं?'}</h4>
+                  <p>{lang === 'en' ? 'Most of our successful projects are led by local youth who started as volunteers first!' : 'हमारे अधिकांश सफल कार्यक्रमों का नेतृत्व स्थानीय युवा कर रहे हैं जिन्होंने पहले स्वयंसेवकों के रूप में शुरुआत की थी!'}</p>
+                  <span className="card-bg-icon">🏔️</span>
+                </div>
+              </div>
+
+              <div className="volunteer-form-card">
+                <div className="qr-gradient-bar"></div>
+                <h3>{lang === 'en' ? 'Registration Form' : 'पंजीकरण फॉर्म'}</h3>
+                {volunteerSubmitted ? (
+                  <div className="form-success-box">
+                    <div className="success-icon">✓</div>
+                    <h4>{lang === 'en' ? 'Application Submitted!' : 'आवेदन सफलतापूर्वक जमा किया गया!'}</h4>
+                    <p>{lang === 'en' ? 'Thank you for reaching out. Our team will contact you shortly to coordinate your onboarding.' : 'हमसे जुड़ने के लिए धन्यवाद। हमारी टीम जल्द ही आपसे संपर्क करेगी।'}</p>
+                    <button
+                      type="button"
+                      className="primary-btn mt-4"
+                      onClick={() => setVolunteerSubmitted(false)}
+                    >
+                      {lang === 'en' ? 'Submit Another Application' : 'दूसरा आवेदन भेजें'}
+                    </button>
+                  </div>
+                ) : (
+                  <form
+                    className="volunteer-form"
+                    onSubmit={(e) => {
+                      e.preventDefault()
+                      setVolunteerSubmitting(true)
+                      setTimeout(() => {
+                        setVolunteerSubmitting(false)
+                        setVolunteerSubmitted(true)
+                      }, 1200)
+                    }}
+                  >
+                    <div className="form-group">
+                      <label>{lang === 'en' ? 'Full Name' : 'पूरा नाम'}</label>
+                      <input type="text" required placeholder={lang === 'en' ? 'Name' : 'नाम'} />
+                    </div>
+
+                    <div className="form-row">
+                      <div className="form-group">
+                        <label>{lang === 'en' ? 'Email Address' : 'ईमेल पता'}</label>
+                        <input type="email" required placeholder="abc@gmail.com" />
+                      </div>
+                      <div className="form-group">
+                        <label>{lang === 'en' ? 'Phone Number' : 'फ़ोन नंबर'}</label>
+                        <input type="tel" required placeholder="9999999999" />
+                      </div>
+                    </div>
+
+                    <div className="form-group">
+                      <label>{lang === 'en' ? 'Area of Interest' : 'रुचि का क्षेत्र'}</label>
+                      <select required defaultValue="">
+                        <option value="" disabled>{lang === 'en' ? 'Select an Option' : 'विकल्प चुनें'}</option>
+                        <option value="Education">{lang === 'en' ? 'Education & Mentoring' : 'शिक्षा और मार्गदर्शन'}</option>
+                        <option value="Environment">{lang === 'en' ? 'Environmental Action' : 'पर्यावरण संरक्षण'}</option>
+                        <option value="Healthcare">{lang === 'en' ? 'Healthcare Support' : 'स्वास्थ्य सेवा सहायता'}</option>
+                        <option value="Digital">{lang === 'en' ? 'Digital / Creative Support' : 'डिजिटल / रचनात्मक सहयोग'}</option>
+                      </select>
+                    </div>
+
+                    <div className="form-group">
+                      <label>{lang === 'en' ? 'Why do you want to join? (Optional)' : 'आप क्यों जुड़ना चाहते हैं? (वैकल्पिक)'}</label>
+                      <textarea rows="3" placeholder={lang === 'en' ? 'Tell us a bit about yourself...' : 'अपने बारे में कुछ बताएं...'}></textarea>
+                    </div>
+
+                    <button
+                      type="submit"
+                      className="submit-form-btn"
+                      disabled={volunteerSubmitting}
+                    >
+                      {volunteerSubmitting
+                        ? (lang === 'en' ? 'Submitting...' : 'भेजा जा रहा है...')
+                        : (lang === 'en' ? 'Submit Application' : 'आवेदन जमा करें')}
+                    </button>
+                    <p className="form-footer-note">{lang === 'en' ? 'JOINING HEART AND ACTION' : 'दिल और कर्म का मिलन'}</p>
+                  </form>
+                )}
+              </div>
+            </div>
+          </article>
+        )}
+
+        {!['contribute', 'volunteer'].includes(view) && (
+          <section className="cta-section">
+            <div className="cta-card">
+              <h2>{t.supportOurMission}</h2>
+              <p>{t.supportMissionText}</p>
+              <div className="cta-actions">
+                <a
+                  className="primary-btn"
+                  href="contribute.html"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    navigateTo('contribute.html', 'contribute')
+                  }}
+                >
+                  {t.contributeNow}
+                </a>
+                <a
+                  className="secondary-btn"
+                  href="volunteer.html"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    navigateTo('volunteer.html', 'volunteer')
+                  }}
+                >
+                  {t.becomeVolunteer}
+                </a>
+              </div>
+            </div>
+          </section>
+        )}
       </main>
 
       <footer className="footer">
@@ -659,7 +1550,15 @@ function App() {
               </div>
 
               <footer className="modal-footer">
-                <a className="modal-support-btn" href="contribute.html">
+                <a
+                  className="modal-support-btn"
+                  href="contribute.html"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    setIsModalOpen(false)
+                    navigateTo('contribute.html', 'contribute')
+                  }}
+                >
                   {t.supportUs}
                 </a>
               </footer>
