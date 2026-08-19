@@ -27,8 +27,8 @@ const content = {
     supportMissionText: 'Your support helps us move closer to a sustainable, inclusive, and empowered future. Get your hands in the soil and your heart in the cause.',
     contributeNow: 'Contribute Now',
     becomeVolunteer: 'Become a Volunteer',
-    headOffice: 'Head Office: Village Ratkhal, PO Dunagiri, Dwarahat, Dist. Almora, Uttarakhand – 263653',
-    branchOffice: 'Branch Office: AD-13, LGF, Tagore Garden, New Delhi – 110027',
+    headOffice: 'Head Office: Village Ratkhal, PO Dunagiri, Dwarahat, Dist. Almora, Uttarakhand - 263653',
+    branchOffice: 'Branch Office: AD-13, LGF, Tagore Garden, New Delhi - 110027',
     footerMotive: "Dedicated to forest restoration, healthcare outreach, children's education, and empowering rural women in the Garhwal and Kumaon Himalayas.",
     quickLinks: 'Quick Links',
     contactUs: 'Contact Us',
@@ -144,6 +144,13 @@ const content = {
         images: ['/images/klkhatterclass1.jpg', '/images/klkhatterclass2.jpg'],
       },
       {
+        title: 'Community Cleanliness Drive',
+        category: 'Ecology',
+        description: 'Local women leading the restoration of forest health and village sanitation through collective action and awareness.',
+        href: 'cleanliness-drive.html',
+        images: ['/images/cleanliness_1.jpg', '/images/cleanliness_2.jpg'],
+      },
+      {
         title: 'Sanitary Pads Distribution',
         category: "Women's Health",
         description: 'Empowering over 100 rural women with menstrual hygiene awareness, dignity, and essential sanitary products through interactive community sessions.',
@@ -211,7 +218,7 @@ const content = {
             leftType: 'text',
             leftContent: {
               heading: 'Insights from the Mountain Side',
-              text: 'An insightful observation made by the doctors highlighted the unique benefits of mountain life — lower stress levels, reduced incidence of diabetes, and fewer heart-related conditions.'
+              text: 'An insightful observation made by the doctors highlighted the unique benefits of mountain life - lower stress levels, reduced incidence of diabetes, and fewer heart-related conditions.'
             },
             rightType: 'text',
             rightContent: {
@@ -270,11 +277,11 @@ const content = {
             leftType: 'text',
             leftContent: {
               heading: 'Project Punarjeevan: A Mission to Restore',
-              text: 'In response to this ecological crisis, Vanprastha Foundation initiated Project Punarjeevan — a mission to restore and rejuvenate the damaged Himalayan landscape. Staying true to the philosophy of harmony between humans and nature, the foundation undertook a large-scale plantation drive, successfully planting over 500 endemic tree species native to the region.'
+              text: 'In response to this ecological crisis, Vanprastha Foundation initiated Project Punarjeevan - a mission to restore and rejuvenate the damaged Himalayan landscape. Staying true to the philosophy of harmony between humans and nature, the foundation undertook a large-scale plantation drive, successfully planting over 500 endemic tree species native to the region.'
             },
             rightType: 'text',
             rightContent: {
-              text: 'Our choice of endemic species ensures that the new growth is resilient, supports local pollinators, and restores the natural water retention capacity of the soil—critical for preventing future environmental degradation.'
+              text: 'Our choice of endemic species ensures that the new growth is resilient, supports local pollinators, and restores the natural water retention capacity of the soil-critical for preventing future environmental degradation.'
             }
           },
           {
@@ -309,7 +316,7 @@ const content = {
             type: 'intro',
             heading: 'Transforming Lives Through Learning',
             paragraphs: [
-              'Education has the power to transform lives, yet for many children in rural areas, access to quality learning remains limited. Recognizing this gap, Vanprastha Foundation initiated a heartfelt effort to bring learning closer to young minds through Masti Ki Pathshala — a joyful and engaging educational experience.'
+              'Education has the power to transform lives, yet for many children in rural areas, access to quality learning remains limited. Recognizing this gap, Vanprastha Foundation initiated a heartfelt effort to bring learning closer to young minds through Masti Ki Pathshala - a joyful and engaging educational experience.'
             ],
             cardTitle: 'PROGRAMME SCOPE',
             cardItems: [
@@ -391,6 +398,48 @@ const content = {
             src: '/images/menstrual_hygiene_1.jpg',
             alt: 'Traditional celebration',
             caption: 'Celebrating health and dignity: A gathering of Kumaoni women collectives at the conclusion of the health drive.'
+          }
+        ]
+      },
+      'cleanliness-drive': {
+        label: 'ECO-SANITATION',
+        title: 'Collective Ownership, Cleaner Horizons',
+        subtitle: 'Local women leading the front in restoring the health of our villages and sacred forest lands.',
+        image: '/images/cleanliness_1.jpg',
+        badgeColor: '#047857',
+        blocks: [
+          {
+            type: 'intro',
+            heading: 'The Vital Connection',
+            paragraphs: [
+              'In rural and forest-adjacent regions, cleanliness is not just about appearance-it is deeply tied to health, ecology, and overall community well-being. Recognizing this vital connection, Vanprastha Foundation organized a community-driven cleanliness drive across nearby villages and forest areas, with local women leading the initiative from the front.',
+              'Rather than treating cleanliness as a one-time activity, the drive emphasized long-term responsibility and collective ownership. Local women, who engage closely with their surroundings and understand the direct impact of waste on family health and natural resources, played a central role in both planning and execution.'
+            ],
+            cardTitle: 'MISSION SCOPE',
+            cardItems: [
+              'Women-Led Leadership',
+              'Forest & Trail Cleanup',
+              'Sustainable Waste Segregation'
+            ]
+          },
+          {
+            type: 'breakout-image',
+            src: '/images/cleanliness_2.jpg',
+            alt: 'Women collective near village school',
+            caption: 'The drive transformed cleanliness into a movement grounded in participation, awareness, and pride.'
+          },
+          {
+            type: 'two-column',
+            leftType: 'text',
+            leftContent: {
+              heading: 'Restoring Natural Balance',
+              text: 'Village pathways, shared spaces, and forest trails were cleared of plastic and non-biodegradable waste, restoring both human and natural environments. Particular focus was given to forest regions, where unnoticed waste can severely harm soil quality, water sources, and wildlife.'
+            },
+            rightType: 'text',
+            rightContent: {
+              heading: 'Conversations for Change',
+              text: 'Beyond physical cleanup, the drive fostered meaningful conversations around hygiene, waste segregation, and sustainable living. Women volunteers engaged with families and children, sharing practical, culturally relevant knowledge that extended the impact beyond the day itself.'
+            }
           }
         ]
       }
@@ -536,6 +585,13 @@ const content = {
         images: ['/images/klkhatterclass1.jpg', '/images/klkhatterclass2.jpg'],
       },
       {
+        title: 'सामूहिक स्वच्छता अभियान',
+        category: 'पर्यावरण',
+        description: 'सामूहिक प्रयास और जागरूकता के माध्यम से वन स्वास्थ्य और ग्रामीण स्वच्छता की बहाली में स्थानीय महिलाओं का नेतृत्व।',
+        href: 'cleanliness-drive.html',
+        images: ['/images/cleanliness_1.jpg', '/images/cleanliness_2.jpg'],
+      },
+      {
         title: 'सेनेटरी पैड्स वितरण',
         category: "महिला स्वास्थ्य",
         description: 'मासिक धर्म स्वच्छता जागरूकता, सम्मान और आवश्यक सेनेटरी उत्पादों के माध्यम से 100 से अधिक ग्रामीण महिलाओं का सशक्तिकरण।',
@@ -671,7 +727,7 @@ const content = {
             type: 'intro',
             heading: 'सीखने के माध्यम से जीवन बदलना',
             paragraphs: [
-              'शिक्षा में जीवन बदलने की शक्ति है, फिर भी ग्रामीण क्षेत्रों के कई बच्चों के लिए गुणवत्तापूर्ण शिक्षा तक पहुंच सीमित है। इस अंतर को पहचानते हुए, वनप्रस्थ फाउंडेशन ने मस्ती की पाठशाला के माध्यम से सीखने को बच्चों के करीब लाने का एक दिली प्रयास शुरू किया — एक सुखद और आकर्षक शैक्षिक अनुभव।'
+              'शिक्षा में जीवन बदलने की शक्ति है, फिर भी ग्रामीण क्षेत्रों के कई बच्चों के लिए गुणवत्तापूर्ण शिक्षा तक पहुंच सीमित है। इस अंतर को पहचानते हुए, वनप्रस्थ फाउंडेशन ने मस्ती की पाठशाला के माध्यम से सीखने को बच्चों के करीब लाने का एक दिली प्रयास शुरू किया - एक सुखद और आकर्षक शैक्षिक अनुभव।'
             ],
             cardTitle: 'कार्यक्रम का दायरा',
             cardItems: [
@@ -755,6 +811,48 @@ const content = {
             caption: 'स्वास्थ्य और सम्मान का उत्सव: स्वास्थ्य अभियान के समापन पर कुमाऊँनी ग्रामीण महिलाओं का जमावड़ा।'
           }
         ]
+      },
+      'cleanliness-drive': {
+        label: 'पर्यावरण एवं स्वच्छता',
+        title: 'सामूहिक जिम्मेदारी, स्वच्छ क्षितिज',
+        subtitle: 'हमारे गांवों और पवित्र वन क्षेत्रों के स्वास्थ्य को बहाल करने में स्थानीय महिलाओं का नेतृत्व।',
+        image: '/images/cleanliness_1.jpg',
+        badgeColor: '#047857',
+        blocks: [
+          {
+            type: 'intro',
+            heading: 'महत्वपूर्ण संबंध',
+            paragraphs: [
+              'ग्रामीण और वनों से सटे क्षेत्रों में, स्वच्छता केवल दिखावे के बारे में नहीं है-यह स्वास्थ्य, पारिस्थितिकी और समग्र सामुदायिक कल्याण से गहराई से जुड़ी है। इस महत्वपूर्ण संबंध को पहचानते हुए, वनप्रस्थ फाउंडेशन ने आसपास के गांवों और वन क्षेत्रों में एक सामुदायिक स्वच्छता अभियान का आयोजन किया, जिसमें स्थानीय महिलाओं ने नेतृत्व किया।',
+              'स्वच्छता को केवल एक बार की गतिविधि मानने के बजाय, इस अभियान ने दीर्घकालिक जिम्मेदारी और सामूहिक स्वामित्व पर जोर दिया। स्थानीय महिलाओं ने योजना और क्रियान्वयन दोनों में केंद्रीय भूमिका निभाई।'
+            ],
+            cardTitle: 'अभियान के मुख्य बिंदु',
+            cardItems: [
+              'महिला-नेतृत्व पहल',
+              'वन एवं रास्तों की सफाई',
+              'सतत कचरा प्रबंधन'
+            ]
+          },
+          {
+            type: 'breakout-image',
+            src: '/images/cleanliness_2.jpg',
+            alt: 'Women collective near village school',
+            caption: 'इस अभियान ने स्वच्छता को भागीदारी, जागरूकता और गर्व पर आधारित एक जनआंदोलन में बदल दिया।'
+          },
+          {
+            type: 'two-column',
+            leftType: 'text',
+            leftContent: {
+              heading: 'प्राकृतिक संतुलन की बहाली',
+              text: 'गांव के रास्तों, सार्वजनिक स्थानों और जंगली पगडंडियों को प्लास्टिक और गैर-बायोडिग्रेडेबल कचरे से मुक्त किया गया। वन क्षेत्रों पर विशेष ध्यान दिया गया, जहां अनदेखा कचरा मिट्टी की गुणवत्ता, जल स्रोतों और वन्यजीवों को गंभीर नुकसान पहुंचा सकता है।'
+            },
+            rightType: 'text',
+            rightContent: {
+              heading: 'बदलाव के लिए संवाद',
+              text: 'शारीरिक सफाई से परे, इस अभियान ने स्वच्छता, कचरा पृथक्करण और संधारणीय जीवन शैली के आसपास सार्थक संवाद को बढ़ावा दिया। महिला स्वयंसेवकों ने परिवारों और बच्चों के साथ बातचीत की और व्यावहारिक ज्ञान साझा किया।'
+            }
+          }
+        ]
       }
     }
   }
@@ -789,6 +887,7 @@ function App() {
     if (path.includes('punarjeevan.html') || path.includes('punarjeevan')) return 'punarjeevan'
     if (path.includes('pathshala.html') || path.includes('pathshala')) return 'pathshala'
     if (path.includes('sanitary-drive.html') || path.includes('sanitary-drive')) return 'sanitary-drive'
+    if (path.includes('cleanliness-drive.html') || path.includes('cleanliness-drive') || path.includes('cleanliness')) return 'cleanliness-drive'
     if (path.includes('contribute.html') || path.includes('contribute') || path.includes('donate')) return 'contribute'
     if (path.includes('volunteer.html') || path.includes('volunteer')) return 'volunteer'
     return 'home'
@@ -820,7 +919,8 @@ function App() {
   }, [])
 
   useEffect(() => {
-    if (!statsRef.current) return
+    if (view !== 'home' || !statsRef.current) return
+    setCounterValues([0, 0, 0])
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -836,11 +936,11 @@ function App() {
           observer.disconnect()
         })
       },
-      { threshold: 0.3 }
+      { threshold: 0.1 }
     )
     observer.observe(statsRef.current)
     return () => observer.disconnect()
-  }, [])
+  }, [view])
 
   const [initPrefix, initHighlight] = t.ourInitiatives.split(' ')
 
@@ -958,9 +1058,6 @@ function App() {
               </div>
 
               <aside className="hero-panel" ref={statsRef}>
-                <span className="panel-eyebrow">{t.ourMission}</span>
-                <h2>{t.holisticTitle}</h2>
-                <p>{t.missionText}</p>
                 <div className="stats-grid">
                   {t.stats.map((item, index) => {
                     const value = counterValues[index]
@@ -1076,6 +1173,7 @@ function App() {
                           if (item.href.includes('punarjeevan')) viewName = 'punarjeevan'
                           else if (item.href.includes('pathshala')) viewName = 'pathshala'
                           else if (item.href.includes('sanitary-drive')) viewName = 'sanitary-drive'
+                          else if (item.href.includes('cleanliness-drive') || item.href.includes('cleanliness')) viewName = 'cleanliness-drive'
                           navigateTo(item.href, viewName)
                         }}
                       >
@@ -1096,7 +1194,7 @@ function App() {
           </section>
         )}
 
-        {['medical-camp', 'punarjeevan', 'pathshala', 'sanitary-drive'].includes(view) && (
+        {['medical-camp', 'punarjeevan', 'pathshala', 'sanitary-drive', 'cleanliness-drive'].includes(view) && (
           <article className="narrative-page">
             <header className="narrative-hero-banner" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(${t.narrativeDetails[view].image})` }}>
               <div className="narrative-hero-content">
@@ -1212,25 +1310,119 @@ function App() {
         )}
 
         {view === 'media' && (
-          <section className="info-placeholder-section">
-            <h2>{t.mediaLink}</h2>
-            <p className="placeholder-text">
-              {lang === 'en'
-                ? 'Our latest news coverage, press releases, and media galleries are under compilation and will be available soon.'
-                : 'हमारी नवीनतम समाचार कवरेज, प्रेस विज्ञप्तियां और media दीर्घाएं संकलन के अधीन हैं और जल्द ही उपलब्ध होंगी।'}
-            </p>
-          </section>
+          <article className="narrative-page media-view-page">
+            <header className="contribute-header-banner">
+              <span className="narrative-badge" style={{ backgroundColor: '#154212' }}>
+                {lang === 'en' ? 'PRESS & COVERAGE' : 'प्रेस और मीडिया कवरेज'}
+              </span>
+              <h1 className="narrative-title">
+                {lang === 'en' ? (
+                  <>Media & <span className="highlight-italic">Resource Centre</span></>
+                ) : (
+                  <>मीडिया और <span className="highlight-italic">संसाधन केंद्र</span></>
+                )}
+              </h1>
+              <p className="narrative-subtitle">
+                {lang === 'en'
+                  ? 'Tracking our journey, impact stories, and press coverage as we work towards restoring the Himalayan ecological balance and community healthcare.'
+                  : 'हिमालयी पर्यावरण संतुलन और सामुदायिक स्वास्थ्य सेवा को बहाल करने के हमारे प्रयासों की समाचार कवरेज और प्रभाव कहानियां।'}
+              </p>
+            </header>
+
+            <div className="media-grid-container">
+              <div className="media-card">
+                <div className="media-card-badge">
+                  <span>{lang === 'en' ? 'Newspaper Feature · Health Camp' : 'समाचार पत्र विशेष · स्वास्थ्य शिविर'}</span>
+                </div>
+                <div className="media-card-image-wrapper">
+                  <a href="/images/media_dr_rajeev_exercise.png" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/media_dr_rajeev_exercise.png" alt="Dr Rajeev Exercise essential for health newspaper feature" className="media-clipping-img" />
+                  </a>
+                </div>
+                <div className="media-card-content">
+                  <h3>
+                    {lang === 'en'
+                      ? 'Exercise is Essential for Good Health : Dr. Rajeev'
+                      : 'स्वस्थ रहने के लिए व्यायाम जरूरी : डा. राजीव'}
+                  </h3>
+                  <p className="media-card-summary">
+                    {lang === 'en'
+                      ? 'Coverage of Vanprastha Foundation’s Free Medical & Dental Camp held at Village Ratkhal, Dunagiri. Esteemed doctors including Dr. Rajeev Seth, Dr. Tulika Seth (AIIMS), and Dr. Aalok Tiwari conducted comprehensive health checkups and emphasized daily exercise alongside balanced nutrition for over 100 rural beneficiaries.'
+                      : 'दूनागिरी के रत्व्वाल गांव में वनप्रस्थ फाउंडेशन द्वारा आयोजित निशुल्क स्वास्थ्य शिविर की विशेष कवरेज। शिविर में एम्स दिल्ली के डा. राजीव सेठ, डा. तूलिका और वरिष्ठ दंत चिकित्सक डा. आलोक तिवारी ने ग्रामीणों के स्वास्थ्य की जांच की और स्वस्थ रहने के लिए नियमित व्यायाम व संतुलित भोजन चक्र को जरूरी बताया।'}
+                  </p>
+                  <div className="media-card-footer">
+                    <span className="media-date">📍 {lang === 'en' ? 'Ratkhal, Dwarahat (Almora)' : 'रत्व्वाल, द्वाराहाट (अल्मोड़ा)'}</span>
+                    <a
+                      href="/images/media_dr_rajeev_exercise.png"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="view-clipping-btn"
+                    >
+                      {lang === 'en' ? 'View Full Clipping ↗' : 'पूरी कटिंग देखें ↗'}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
         )}
 
         {view === 'awards' && (
-          <section className="info-placeholder-section">
-            <h2>{lang === 'en' ? 'Awards & Recognition' : 'पुरस्कार और मान्यता'}</h2>
-            <p className="placeholder-text">
-              {lang === 'en'
-                ? 'A collection of accolades, certifications, and community recognitions received by the Foundation will be displayed here.'
-                : 'फाउंडेशन को प्राप्त प्रशंसापत्रों, प्रमाणपत्रों और सामुदायिक मान्यताओं का संग्रह यहाँ प्रदर्शित किया जाएगा।'}
-            </p>
-          </section>
+          <article className="narrative-page awards-view-page">
+            <header className="contribute-header-banner">
+              <span className="narrative-badge" style={{ backgroundColor: '#b45309' }}>
+                {lang === 'en' ? 'HONOURS & ACCOLADES' : 'सम्मान और पुरस्कार'}
+              </span>
+              <h1 className="narrative-title">
+                {lang === 'en' ? (
+                  <>Awards & <span className="highlight-italic">Recognition</span></>
+                ) : (
+                  <>पुरस्कार और <span className="highlight-italic">मान्यता</span></>
+                )}
+              </h1>
+              <p className="narrative-subtitle">
+                {lang === 'en'
+                  ? 'Celebrating national recognition and community trust earned through sincere service, ecological stewardship, and rural empowerment in Uttarakhand.'
+                  : 'उत्तराखंड में सेवा, पर्यावरण संरक्षण और ग्रामीण सशक्तिकरण के माध्यम से अर्जित राष्ट्रीय सम्मान और सामुदायिक विश्वास का उत्सव।'}
+              </p>
+            </header>
+
+            <div className="media-grid-container">
+              <div className="media-card award-card">
+                <div className="media-card-badge award-card-badge">
+                  <span>{lang === 'en' ? 'Sardar Patel Unity Award · National Honour' : 'सरदार पटेल एकता पुरस्कार · राष्ट्रीय सम्मान'}</span>
+                </div>
+                <div className="media-card-image-wrapper award-image-wrapper">
+                  <a href="/images/award_sardar_patel.jpg" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/award_sardar_patel.jpg" alt="CA Dr Alok Misra receiving Sardar Patel Unity Award" className="media-clipping-img award-showcase-img" />
+                  </a>
+                </div>
+                <div className="media-card-content">
+                  <h3>
+                    {lang === 'en'
+                      ? 'Sardar Patel Unity Award Presented to CA (Dr.) Alok Misra'
+                      : 'सीए (डॉ.) आलोक मिश्रा को प्रदान किया गया सरदार पटेल एकता सम्मान'}
+                  </h3>
+                  <p className="media-card-summary">
+                    {lang === 'en'
+                      ? 'CA (Dr.) Alok Misra, Founder & Promoter of Vanprastha Foundation (Uttarakhand), was honored with the prestigious Sardar Patel Unity Award for outstanding contribution as the Best Spiritual Retreat & Community Welfare Leader in India. This national accolade celebrates the foundation’s relentless commitment to restoring Himalayan forests, uplifting rural health, and empowering grassroots communities.'
+                      : 'वनप्रस्थ फाउंडेशन (उत्तराखंड) के संस्थापक और प्रवर्तक सीए (डॉ.) आलोक मिश्रा को भारत में सर्वश्रेष्ठ आध्यात्मिक रिट्रीट और सामाजिक कल्याण के लिए प्रतिष्ठित सरदार पटेल एकता सम्मान से सम्मानित किया गया। यह राष्ट्रीय सम्मान हिमालयी वनों की बहाली, ग्रामीण स्वास्थ्य सुधार और सामुदायिक सशक्तिकरण के प्रति फाउंडेशन की अटूट निष्ठा का प्रतीक है।'}
+                  </p>
+                  <div className="media-card-footer">
+                    <span className="media-date">🏆 {lang === 'en' ? 'National Recognition · Annual Retreat India' : 'राष्ट्रीय सम्मान · वार्षिक समारोह'}</span>
+                    <a
+                      href="/images/award_sardar_patel.jpg"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="view-clipping-btn award-btn"
+                    >
+                      {lang === 'en' ? 'View Award Photo ↗' : 'पुरस्कार फोटो देखें ↗'}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
         )}
 
         {view === 'faq' && (
@@ -1375,45 +1567,78 @@ function App() {
                 ) : (
                   <form
                     className="volunteer-form"
-                    onSubmit={(e) => {
+                    action="https://formspree.io/f/mnjkkeqe"
+                    method="POST"
+                    onSubmit={async (e) => {
                       e.preventDefault()
                       setVolunteerSubmitting(true)
-                      setTimeout(() => {
+                      const formData = new FormData(e.target)
+                      try {
+                        const response = await fetch('https://formspree.io/f/mnjkkeqe', {
+                          method: 'POST',
+                          body: formData,
+                          headers: {
+                            'Accept': 'application/json'
+                          }
+                        })
+                        if (response.ok) {
+                          setVolunteerSubmitting(false)
+                          setVolunteerSubmitted(true)
+                        } else {
+                          setVolunteerSubmitting(false)
+                          setVolunteerSubmitted(true)
+                        }
+                      } catch (error) {
+                        console.error('Formspree submission error:', error)
                         setVolunteerSubmitting(false)
                         setVolunteerSubmitted(true)
-                      }, 1200)
+                      }
                     }}
                   >
+                    <input type="hidden" name="_subject" value="New Volunteer Application - Vanprastha Foundation" />
+                    <input type="hidden" name="Recipient_Email" value="anishagarg.12092006@gmail.com" />
                     <div className="form-group">
                       <label>{lang === 'en' ? 'Full Name' : 'पूरा नाम'}</label>
-                      <input type="text" required placeholder={lang === 'en' ? 'Name' : 'नाम'} />
+                      <input type="text" name="Full Name" required placeholder={lang === 'en' ? 'Name' : 'नाम'} />
                     </div>
 
                     <div className="form-row">
                       <div className="form-group">
                         <label>{lang === 'en' ? 'Email Address' : 'ईमेल पता'}</label>
-                        <input type="email" required placeholder="abc@gmail.com" />
+                        <input type="email" name="Email Address" required placeholder="abc@gmail.com" />
                       </div>
                       <div className="form-group">
                         <label>{lang === 'en' ? 'Phone Number' : 'फ़ोन नंबर'}</label>
-                        <input type="tel" required placeholder="9999999999" />
+                        <input
+                          type="tel"
+                          name="Phone Number"
+                          required
+                          maxLength={10}
+                          minLength={10}
+                          pattern="[0-9]{10}"
+                          title={lang === 'en' ? 'Please enter a valid 10-digit mobile number' : 'कृपया 10 अंकों का मान्य मोबाइल नंबर दर्ज करें'}
+                          placeholder="9999999999"
+                          onInput={(e) => {
+                            e.target.value = e.target.value.replace(/[^0-9]/g, '').slice(0, 10)
+                          }}
+                        />
                       </div>
                     </div>
 
                     <div className="form-group">
                       <label>{lang === 'en' ? 'Area of Interest' : 'रुचि का क्षेत्र'}</label>
-                      <select required defaultValue="">
+                      <select name="Area of Interest" required defaultValue="">
                         <option value="" disabled>{lang === 'en' ? 'Select an Option' : 'विकल्प चुनें'}</option>
-                        <option value="Education">{lang === 'en' ? 'Education & Mentoring' : 'शिक्षा और मार्गदर्शन'}</option>
-                        <option value="Environment">{lang === 'en' ? 'Environmental Action' : 'पर्यावरण संरक्षण'}</option>
-                        <option value="Healthcare">{lang === 'en' ? 'Healthcare Support' : 'स्वास्थ्य सेवा सहायता'}</option>
-                        <option value="Digital">{lang === 'en' ? 'Digital / Creative Support' : 'डिजिटल / रचनात्मक सहयोग'}</option>
+                        <option value="Education & Mentoring">{lang === 'en' ? 'Education & Mentoring' : 'शिक्षा और मार्गदर्शन'}</option>
+                        <option value="Environmental Action">{lang === 'en' ? 'Environmental Action' : 'पर्यावरण संरक्षण'}</option>
+                        <option value="Healthcare Support">{lang === 'en' ? 'Healthcare Support' : 'स्वास्थ्य सेवा सहायता'}</option>
+                        <option value="Digital / Creative Support">{lang === 'en' ? 'Digital / Creative Support' : 'डिजिटल / रचनात्मक सहयोग'}</option>
                       </select>
                     </div>
 
                     <div className="form-group">
                       <label>{lang === 'en' ? 'Why do you want to join? (Optional)' : 'आप क्यों जुड़ना चाहते हैं? (वैकल्पिक)'}</label>
-                      <textarea rows="3" placeholder={lang === 'en' ? 'Tell us a bit about yourself...' : 'अपने बारे में कुछ बताएं...'}></textarea>
+                      <textarea name="Message" rows="3" placeholder={lang === 'en' ? 'Tell us a bit about yourself...' : 'अपने बारे में कुछ बताएं...'}></textarea>
                     </div>
 
                     <button
