@@ -11,11 +11,11 @@ const FOUNDER_CONTENT = {
     subtitle: "Leading with vision, serving with compassion.",
   },
   profile: {
-    name: "[Founder Name]",
-    designation: "Founder & Managing Trustee",
-    image: "https://placehold.co/400x500/e2e8f0/64748b?text=Founder+Portrait", 
+    name: "CA(Dr.) Alok Misra",
+    designation: "Founder, Alok Misra &Co.",
+    image: "https://placehold.co/400x500/e2e8f0/64748b?text=Founder+Portrait",
     socialLinks: {
-      website: "#", 
+      website: "#",
       twitter: "#",
       email: "mailto:contact@vanprastha.org"
     }
@@ -54,7 +54,7 @@ const Founder = () => {
       <div className="founder-bg-decorative"></div>
 
       <div className="founder-container">
-        
+
         {/* Section Header */}
         <div className="founder-header">
           <span className="founder-eyebrow">Leadership</span>
@@ -65,16 +65,16 @@ const Founder = () => {
 
         {/* Main Content Grid */}
         <div className="founder-grid">
-          
+
           {/* Left Column: Image & Profile Card */}
           <div className="founder-card-wrapper">
             <div className="founder-image-card">
-              <img 
-                src={FOUNDER_CONTENT.profile.image} 
+              <img
+                src={FOUNDER_CONTENT.profile.image}
                 alt={FOUNDER_CONTENT.profile.name}
                 className="founder-image"
               />
-              
+
               <div className="founder-image-overlay">
                 <h2 className="founder-name">{FOUNDER_CONTENT.profile.name}</h2>
                 <p className="founder-designation">{FOUNDER_CONTENT.profile.designation}</p>
@@ -98,14 +98,14 @@ const Founder = () => {
 
           {/* Right Column: Bio & Vision */}
           <div className="founder-content">
-            
+
             <div className="founder-quote-block">
               <Quote className="founder-quote-icon" />
               <h3 className="founder-quote-text">
                 "{FOUNDER_CONTENT.message.highlightQuote}"
               </h3>
             </div>
-            
+
             <div className="founder-bio">
               {FOUNDER_CONTENT.message.paragraphs.map((para, index) => (
                 <p key={index} className={index === 0 ? "founder-bio-intro" : ""}>
@@ -113,23 +113,22 @@ const Founder = () => {
                 </p>
               ))}
             </div>
+          </div>
+        </div>
 
-            <div>
-              <h4 className="founder-values-header">Core Values</h4>
-              
-              <div className="founder-values-grid">
-                {FOUNDER_CONTENT.visionPoints.map((point, index) => (
-                  <div key={index} className="founder-value-card">
-                    <div className="founder-value-icon-wrapper">
-                      <point.Icon size={24} />
-                    </div>
-                    <h5 className="founder-value-title">{point.title}</h5>
-                    <p className="founder-value-desc">{point.description}</p>
-                  </div>
-                ))}
+        <div className="founder-values-section">
+          <h4 className="founder-values-header">Core Values</h4>
+
+          <div className="founder-values-grid">
+            {FOUNDER_CONTENT.visionPoints.map((point, index) => (
+              <div key={index} className="founder-value-card">
+                <div className="founder-value-icon-wrapper">
+                  <point.Icon size={24} />
+                </div>
+                <h5 className="founder-value-title">{point.title}</h5>
+                <p className="founder-value-desc">{point.description}</p>
               </div>
-            </div>
-
+            ))}
           </div>
         </div>
       </div>
