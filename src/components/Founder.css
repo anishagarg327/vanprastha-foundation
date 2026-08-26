@@ -1,0 +1,338 @@
+.founder-section {
+  min-height: 100vh;
+  background-color: #fcfdfa;
+  padding-bottom: 6rem;
+  position: relative;
+  font-family: 'Manrope', 'Public Sans', sans-serif;
+  color: #1a2512;
+}
+
+.founder-bg-decorative {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 24rem;
+  background: linear-gradient(to bottom, #f1f6ea, transparent);
+  z-index: 0;
+}
+
+.founder-container {
+  max-w-width: 1280px;
+  margin: 0 auto;
+  padding: 5rem 1rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+@media (min-width: 1024px) {
+  .founder-container {
+    padding-top: 8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.founder-header {
+  text-align: center;
+  max-width: 48rem;
+  margin: 0 auto 5rem;
+}
+
+.founder-eyebrow {
+  color: #647c50;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.founder-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1a2512;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+@media (min-width: 768px) {
+  .founder-title { font-size: 3rem; }
+}
+
+@media (min-width: 1024px) {
+  .founder-title { font-size: 3.75rem; }
+}
+
+.founder-divider {
+  width: 6rem;
+  height: 0.375rem;
+  background: linear-gradient(to right, #869966, #4a5c3a);
+  margin: 0 auto 1.5rem;
+  border-radius: 9999px;
+}
+
+.founder-subtitle {
+  font-size: 1.25rem;
+  color: #5b6e4b;
+  font-weight: 300;
+}
+
+.founder-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+@media (min-width: 1024px) {
+  .founder-grid {
+    grid-template-columns: 5fr 7fr;
+    gap: 5rem;
+  }
+}
+
+.founder-card-wrapper {
+  position: relative;
+}
+
+.founder-image-card {
+  position: relative;
+  z-index: 10;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 25px 50px -12px rgba(45, 58, 36, 0.15);
+  border: 1px solid #e8f0df;
+  transition: transform 0.5s ease;
+}
+
+.founder-image-card:hover {
+  transform: translateY(-8px);
+}
+
+.founder-image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.7s ease;
+}
+
+.founder-image-card:hover .founder-image {
+  transform: scale(1.05);
+}
+
+.founder-image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.5), transparent);
+  padding: 6rem 2rem 2rem;
+  transform: translateY(8px);
+  transition: transform 0.5s ease;
+}
+
+.founder-image-card:hover .founder-image-overlay {
+  transform: translateY(0);
+}
+
+.founder-name {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 0.25rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.founder-designation {
+  color: #d3e0c5;
+  font-weight: 500;
+  font-size: 1.125rem;
+  margin: 0;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.founder-card-offset {
+  position: absolute;
+  top: 1.5rem;
+  right: -1.5rem;
+  bottom: 1.5rem;
+  left: -1.5rem;
+  background-color: #f1f6ea;
+  border-radius: 1.5rem;
+  z-index: 0;
+  transition: transform 0.5s ease;
+}
+
+.founder-card-wrapper:hover .founder-card-offset {
+  transform: rotate(2deg);
+}
+
+.founder-socials {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  position: relative;
+  z-index: 10;
+}
+
+.founder-social-link {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: white;
+  border: 1px solid #e8f0df;
+  color: #5b6e4b;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.founder-social-link:hover {
+  background-color: #869966;
+  color: white;
+  border-color: #869966;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+}
+
+.founder-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.founder-quote-block {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.founder-quote-icon {
+  position: absolute;
+  top: -1.5rem;
+  left: -2rem;
+  width: 4rem;
+  height: 4rem;
+  color: #e8f0df;
+  z-index: 0;
+  transform: rotate(180deg);
+}
+
+.founder-quote-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2d3a24;
+  line-height: 1.4;
+  position: relative;
+  z-index: 10;
+  padding-left: 1.5rem;
+  border-left: 4px solid #869966;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .founder-quote-text {
+    font-size: 1.875rem;
+  }
+}
+
+.founder-bio {
+  margin-bottom: 4rem;
+}
+
+.founder-bio p {
+  color: #4a5c3a;
+  font-weight: 300;
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+}
+
+.founder-bio p.founder-bio-intro {
+  font-size: 1.25rem;
+  color: #3a4a2f;
+  font-weight: 400;
+}
+
+.founder-values-header {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #647c50;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.founder-values-header::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #e8f0df;
+}
+
+.founder-values-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .founder-values-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.founder-value-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  border: 1px solid #f0f4eb;
+  transition: all 0.3s ease;
+}
+
+.founder-value-card:hover {
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+  border-color: #d3e0c5;
+}
+
+.founder-value-icon-wrapper {
+  width: 3rem;
+  height: 3rem;
+  background-color: #f8faeb;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  color: #647c50;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.founder-value-card:hover .founder-value-icon-wrapper {
+  background-color: #869966;
+  color: white;
+}
+
+.founder-value-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #2d3a24;
+  margin: 0 0 0.5rem;
+}
+
+.founder-value-desc {
+  color: #5b6e4b;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin: 0;
+}

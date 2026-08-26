@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
+import Founder from './components/Founder'
 import './App.css'
 
 const content = {
@@ -890,6 +891,7 @@ function App() {
     if (path.includes('cleanliness-drive.html') || path.includes('cleanliness-drive') || path.includes('cleanliness')) return 'cleanliness-drive'
     if (path.includes('contribute.html') || path.includes('contribute') || path.includes('donate')) return 'contribute'
     if (path.includes('volunteer.html') || path.includes('volunteer')) return 'volunteer'
+    if (path.includes('founder.html') || path.includes('founder')) return 'founder'
     return 'home'
   }
   const [view, setView] = useState(getInitialView)
@@ -1009,6 +1011,18 @@ function App() {
           </button>
         </nav>
 
+        <a 
+          href="founder.html" 
+          className="mx-4 text-base font-bold text-[#1a2512] hover:text-[#5b6e4b] transition-colors whitespace-nowrap"
+          style={{ textDecoration: 'none' }}
+          onClick={(e) => {
+            e.preventDefault();
+            navigateTo('founder.html', 'founder');
+          }}
+        >
+          {lang === 'en' ? 'Our Founder' : 'हमारे संस्थापक'}
+        </a>
+
         <a
           className="donate-btn"
           href="contribute.html"
@@ -1114,6 +1128,8 @@ function App() {
             </article>
           </>
         )}
+
+        {view === 'founder' && <Founder />}
 
         {view === 'initiatives' && (
           <section className="initiatives-section">
