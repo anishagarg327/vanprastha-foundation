@@ -7,6 +7,10 @@
   color: #1a2512;
 }
 
+.founder-section * {
+  box-sizing: border-box;
+}
+
 .founder-bg-decorative {
   position: absolute;
   top: 0;
@@ -18,7 +22,7 @@
 }
 
 .founder-container {
-  max-w-width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 1.5rem 1rem 0;
   position: relative;
@@ -116,8 +120,17 @@
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: center 25%;
   display: block;
   transition: transform 0.7s ease;
+}
+
+.director-image {
+  object-position: center 80%;
+}
+
+.founder-director-column:last-child .director-image {
+  object-position: bottom;
 }
 
 .founder-image-card:hover .founder-image {
@@ -157,18 +170,16 @@
 
 .founder-card-offset {
   position: absolute;
-  top: 1.5rem;
-  right: -1.5rem;
-  bottom: 1.5rem;
-  left: -1.5rem;
+  inset: -0.75rem;
   background-color: #f1f6ea;
+  border: 1px solid #e2ebd8;
   border-radius: 1.5rem;
   z-index: 0;
   transition: transform 0.5s ease;
 }
 
 .founder-card-wrapper:hover .founder-card-offset {
-  transform: rotate(2deg);
+  transform: scale(1.02);
 }
 
 .founder-socials {
@@ -339,4 +350,39 @@
   font-size: 0.875rem;
   line-height: 1.6;
   margin: 0;
+}
+
+.founder-directors-section {
+  margin-top: 6rem;
+}
+
+.founder-directors-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  margin-top: 6rem;
+}
+
+@media (min-width: 1024px) {
+  .founder-directors-layout {
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+  
+  .founder-director-column:first-child {
+    border-right: 1px solid #e8f0df;
+    padding-right: 4rem;
+  }
+  
+  .founder-director-column:last-child {
+    padding-left: 4rem;
+  }
+}
+
+.founder-director-text {
+  margin-top: 4rem;
+}
+
+.founder-director-text .founder-quote-text {
+  font-size: 1.25rem;
 }

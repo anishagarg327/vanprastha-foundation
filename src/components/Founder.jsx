@@ -12,8 +12,8 @@ const FOUNDER_CONTENT = {
   },
   profile: {
     name: "CA(Dr.) Alok Misra",
-    designation: "Founder, Alok Misra &Co.",
-    image: "https://placehold.co/400x500/e2e8f0/64748b?text=Founder+Portrait",
+    designation: "Founder & Promoter",
+    image: "/images/founder.jpg",
     socialLinks: {
       website: "#",
       twitter: "#",
@@ -43,6 +43,42 @@ const FOUNDER_CONTENT = {
       title: "Service",
       description: "Action-oriented social impact that creates lasting change.",
       Icon: HandHeart
+    }
+  ],
+  directors: [
+    {
+      name: "Mrs. Sunaina Misra",
+      designation: "Director",
+      image: "/images/director1.jpg",
+      socialLinks: {
+        website: "#",
+        twitter: "#",
+        email: "mailto:director1@vanprastha.org"
+      },
+      message: {
+        highlightQuote: "Building sustainable solutions for the future of our rural communities.",
+        paragraphs: [
+          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+        ]
+      }
+    },
+    {
+      name: "Anand Misra",
+      designation: "Director",
+      image: "/images/director2.jpg",
+      socialLinks: {
+        website: "#",
+        twitter: "#",
+        email: "mailto:director2@vanprastha.org"
+      },
+      message: {
+        highlightQuote: "Empowerment starts at the grassroots level, through education and healthcare.",
+        paragraphs: [
+          "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.",
+          "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur."
+        ]
+      }
     }
   ]
 };
@@ -81,8 +117,6 @@ const Founder = () => {
               </div>
             </div>
 
-            <div className="founder-card-offset"></div>
-
             <div className="founder-socials">
               <a href={FOUNDER_CONTENT.profile.socialLinks.website} className="founder-social-link">
                 <Globe size={20} />
@@ -114,6 +148,58 @@ const Founder = () => {
               ))}
             </div>
           </div>
+        </div>
+
+        {/* Directors List */}
+        <div className="founder-directors-layout">
+          {FOUNDER_CONTENT.directors.map((director, index) => (
+            <div key={index} className="founder-director-column">
+              <div className="founder-card-wrapper">
+                <div className="founder-image-card">
+                  <img
+                    src={director.image}
+                    alt={director.name}
+                    className="founder-image director-image"
+                  />
+
+                  <div className="founder-image-overlay">
+                    <h2 className="founder-name">{director.name}</h2>
+                    <p className="founder-designation">{director.designation}</p>
+                  </div>
+                </div>
+
+                <div className="founder-socials">
+                  <a href={director.socialLinks.website} className="founder-social-link">
+                    <Globe size={20} />
+                  </a>
+                  <a href={director.socialLinks.twitter} className="founder-social-link">
+                    <MessageCircle size={20} />
+                  </a>
+                  <a href={director.socialLinks.email} className="founder-social-link">
+                    <Mail size={20} />
+                  </a>
+                </div>
+              </div>
+
+              {/* Text Below */}
+              <div className="founder-director-text">
+                <div className="founder-quote-block">
+                  <Quote className="founder-quote-icon" />
+                  <h3 className="founder-quote-text">
+                    "{director.message.highlightQuote}"
+                  </h3>
+                </div>
+
+                <div className="founder-bio">
+                  {director.message.paragraphs.map((para, pIndex) => (
+                    <p key={pIndex} className={pIndex === 0 ? "founder-bio-intro" : ""}>
+                      {para}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
 
         <div className="founder-values-section">
